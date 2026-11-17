@@ -1,0 +1,8 @@
+# Local test output (screenshots, browser profiles, recordings)
+tests/*
+!tests/serve.cjs
+
+# Full-size originals; the site uses the resized web/ and thumb/ copies
+assets/images/gamecomasia/*.jpg
+assets/images/gamecomasia/*.JPG
+assets/images/gamecomasia/*.HEIC

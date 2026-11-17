@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เรซูเม่ | กิตติศักดิ์ คนเกณฑ์ (Game Designer & Developer)</title>
+
+  <!-- Google Fonts: Kanit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Kanit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        font-size: 11pt;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .page-break {
+        page-break-after: always;
+      }
+
+      .print-shadow-none {
+        box-shadow: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-100 text-slate-800 font-sans p-4 sm:p-8 antialiased">
+
+  <!-- Print Actions Bar (hidden when printing) -->
+  <div
+    class="max-w-4xl mx-auto mb-6 flex items-center justify-between no-print bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+    <div class="flex items-center gap-2">
+      <a href="index.html" class="text-sm font-semibold text-amber-700 hover:text-amber-800 flex items-center gap-1">
+        ← กลับหน้า Showcase เว็บไซต์
+      </a>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-xs text-slate-500 hidden sm:inline">กดปุ่มพิมพ์ หรือใช้คำสั่ง Ctrl + P (บันทึกเป็น PDF
+        ได้)</span>
+      <button onclick="window.print()"
+        class="px-5 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm shadow hover:shadow-md transition-all flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+        </svg>
+        พิมพ์ / บันทึก PDF (Print to PDF)
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Resume Sheet (A4 Proportion) -->
+  <main
+    class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 p-8 sm:p-12 print:p-0 print:border-none print-shadow-none">
+
+    <!-- Header Section -->
+    <header class="border-b-2 border-slate-800 pb-6 mb-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+
+        <div class="flex items-center gap-5">
+          <!-- Profile Pic -->
+          <div class="w-24 h-24 rounded-xl overflow-hidden border-2 border-amber-500/40 flex-shrink-0 bg-slate-100">
+            <img src="assets/images/profile.jpg" alt="กิตติศักดิ์ คนเกณฑ์"
+              class="w-full h-full object-cover object-top">
+          </div>
+
+          <div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              กิตติศักดิ์ คนเกณฑ์ <span class="text-lg sm:text-xl font-normal text-slate-600">(กอล์ฟ)</span>
+            </h1>
+            <p class="text-sm font-semibold text-amber-700 uppercase tracking-wider mt-0.5">
+              Kittisak Khonken (Golf) • นามปากกา: Shiro | Game Designer & 3D Artist
+            </p>
+            <p class="text-xs text-slate-500 mt-1">
+              นักศึกษาชั้นปีที่ 3 สาขาวิชานิเทศศาสตร์ดิจิทัล สำนักวิชาศาสตร์และศิลป์ดิจิทัล มหาวิทยาลัยเทคโนโลยีสุรนารี
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="text-xs text-slate-600 sm:text-right space-y-1 sm:border-l sm:border-slate-200 sm:pl-6">
+          <div><strong class="text-slate-800">โทร:</strong> <a href="tel:0889950827"
+              class="font-mono text-amber-700 font-bold">088-995-0827</a></div>
+          <div><strong class="text-slate-800">Facebook:</strong> <a href="https://www.facebook.com/shiro.chan.741834"
+              target="_blank" class="font-mono text-blue-600 hover:underline">facebook.com/shiro.chan.741834</a></div>
+          <div><strong class="text-slate-800">Instagram:</strong> <a href="https://www.instagram.com/shiro_sr48/"
+              target="_blank" class="font-mono text-pink-600 hover:underline">@shiro_sr48</a></div>
+          <div><strong class="text-slate-800">itch.io:</strong> <a href="https://shirodev404.itch.io/muea-demo"
+              target="_blank" class="font-mono text-amber-700 hover:underline">shirodev404.itch.io/muea-demo</a></div>
+          <div><strong class="text-slate-800">ที่อยู่:</strong> 105/365 ม.6 ต.สุรนารี อ.เมือง จ.นครราชสีมา (มทส.)</div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="mb-6">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+        บทสรุปประวัติและเป้าหมายวิชาชีพ (Professional Summary)
+      </h2>
+      <p class="text-xs text-slate-700 leading-relaxed">
+        นักออกแบบเกม (Game Designer) และผู้พัฒนาเกมรุ่นใหม่ มีความเชี่ยวชาญด้านการออกแบบกลไกเกมหลัก (Core Gameplay
+        Loops), ระบบการเล่นเชิงกลยุทธ์และการเอาชีวิตรอด (Survival & Systems Design),
+        การผสมผสานมิติด้านวัฒนธรรมและจิตวิทยาเข้ากับการเล่าเรื่องในเกม (Narrative & Atmosphere)
+        มีผลงานโดดเด่นจากการพัฒนาเกม
+        <strong>"MUEA คืนกลับ แดนสาป"</strong> จนได้รับทุนสนับสนุนการพัฒนาเกม 25,000 บาท และรางวัลชมเชยระดับภูมิภาค
+        10,000 บาท
+        รวมถึงได้รับคัดเลือกขึ้น Pitching บนเวทีใหญ่และออกบูธจัดแสดงระดับนานาชาติในงาน <strong>gamescom asia × Thailand
+          Game Show 2026</strong> ในโครงการ <strong>Thai Next Thainess</strong> (จัดโดย กรมส่งเสริมวัฒนธรรม
+        กระทรวงวัฒนธรรม ณ ศูนย์การประชุมแห่งชาติสิริกิติ์ QSNCC)
+        มีพื้นฐานแน่นทั้งด้านการสื่อสารดิจิทัล การมิกซ์เสียง/ออกแบบเสียง (Sound Engineering)
+        และการสร้างสรรค์สื่อมัลติมีเดีย
+      </p>
+    </section>
+
+    <!-- Two-column Layout for Experience & Skills -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+      <!-- Left Column: Featured Projects & Honors (8 cols) -->
+      <div class="md:col-span-8 space-y-6">
+
+        <!-- Project 1: MUEA -->
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+            ผลงานเกมและการพัฒนา (Featured Game Project)
+          </h2>
+
+          <div class="border-l-2 border-amber-600 pl-4 py-1 space-y-2">
+            <div class="flex items-center justify-between">
+              <h3 class="text-sm font-bold text-slate-900">MUEA คืนกลับ แดนสาป (MUEA: Return to the Cursed Land)</h3>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">2026</span>
+            </div>
+
+            <p class="text-xs text-slate-600 font-medium">
+              บทบาท: <strong>Lead Game Designer, Systems & Balancing Designer</strong>
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3 text-[11px] font-mono py-1">
+              <a href="https://shirodev404.itch.io/muea-demo" target="_blank"
+                class="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold hover:bg-amber-200 transition-colors">
+                เล่น Playable Demo บน itch.io ↗
+              </a>
+              <a href="https://youtu.be/9ThoC574Yx0" target="_blank"
+                class="px-2 py-0.5 rounded bg-rose-100 text-rose-900 font-bold hover:bg-rose-200 transition-colors">
+                ชมตัวอย่าง Trailer บน YouTube ↗
+              </a>
+            </div>
+
+            <p class="text-xs text-slate-700 leading-relaxed">
+              เกมจำลองการบริหารจัดการหมู่บ้านชนบทอีสานยุค 90s ในมุมมองผู้ใหญ่บ้าน ที่ต้องนำพาลูกบ้านเอาชีวิตรอดให้ครบ 14
+              วัน ท่ามกลาง 2 ภัยร้ายที่ซ้อนทับกัน คือ โรคระบาดประหลาด และผีร้ายที่ปลอมตัวเป็นคน
+            </p>
+
+            <ul class="list-disc list-inside text-xs text-slate-600 space-y-1">
+              <li><strong>ออกแบบ Core Loop:</strong> วงจรการเล่น 4 ช่วงเวลา (รายงานเช้า, สำรวจกลางวัน, เฝ้าระวังค่ำคืน,
+                ประเมินผล) พร้อมเงื่อนไขการรอดชีวิต 14 วัน</li>
+              <li><strong>ระบบสืบสวน (Social Deduction):</strong> ออกแบบพฤติกรรมผิดสังเกตของผีแฝงตัว เบาะแส
+                และพิธีกรรมทดสอบด้วยสิ่งศักดิ์สิทธิ์/สมุนไพร</li>
+              <li><strong>ระบบบริหารทรัพยากร (Survival Resource Management):</strong> บาลานซ์ค่าความเชื่อมั่น (Trust),
+                อัตราการติดเชื้อ (Infection), และความหวาดระแวง (Paranoia)</li>
+              <li><strong>การทดสอบกับผู้เล่นจริง:</strong> เปิดให้ทดลองเล่น Playable Demo ในงาน Terminal21 Games
+                Festival ผู้ร่วมทดสอบมากกว่า 100+ คน</li>
+            </ul>
+
+            <!-- Recognition sub-box -->
+            <div class="mt-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-[11px] text-slate-700 space-y-1">
+              <div><strong>gamescom asia × Thailand Game Show 2026 (Thai Next Thainess):</strong> ได้รับคัดเลือกขึ้น
+                Pitching บนเวทีใหญ่ (หมวด NEXT-SHAPE) นำเสนอเกม MUEA คืนกลับ แดนสาป และร่วมออกบูธจัดแสดง Playable Demo
+                ในฐานะ Exhibitor ประจำบูธกรมส่งเสริมวัฒนธรรม กระทรวงวัฒนธรรม ณ ศูนย์การประชุมแห่งชาติสิริกิติ์</div>
+              <div><strong>ISAN Game Craft 2026 Contest:</strong> รางวัลชมเชย พร้อมเงินรางวัล 10,000 บาท ณ เซ็นทรัล
+                โคราช</div>
+              <div><strong>Korat Frontier Game : Jams 2026:</strong> ผ่านคัดเลือกหมวด Playable Demo รับทุนพัฒนา 25,000
+                บาท ณ เทอร์มินอล 21 โคราช</div>
+              <div><strong>KREATOR SPACE 2026:</strong> จัดแสดงเกมในโซน Game Showcase “บ้านร้าง-เกม-หลอน” ณ ศูนย์สร้างสรรค์งานออกแบบ
+                (TCDC) นครราชสีมา</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Multimedia & Audio -->
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            ผลงานด้านเสียงและมัลติมีเดีย (Audio & Multimedia Production)
+          </h2>
+
+          <div class="border-l-2 border-blue-600 pl-4 py-1 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-sm font-bold text-slate-900">มิวสิกวิดีโอ & เสียง: Cupid (Twin Version) - ViViiMLN Cover
+              </h3>
+              <a href="https://www.youtube.com/watch?v=BnmEEaPHXYE" target="_blank"
+                class="px-2 py-0.5 rounded bg-red-100 text-red-700 font-bold hover:bg-red-200 transition-colors text-[11px]">
+                ชม MV บน YouTube ↗
+              </a>
+            </div>
+
+            <p class="text-xs text-slate-600 font-medium">
+              บทบาท: <strong>Vocal Mixing Engineer, 2D Animation, Video Sequence Editor</strong>
+            </p>
+
+            <ul class="list-disc list-inside text-xs text-slate-600 space-y-1">
+              <li>มิกซ์เสียงร้องและมาสเตอริง (Vocal Tuning, EQ, Dynamic Compression) ให้เข้ากับดนตรีอย่างกลมกลืน</li>
+              <li>จัดทำอนิเมชั่น 2D และตัดต่อจัดเรียงลำดับภาพโมชั่นกราฟิก เผยแพร่ทางช่อง YouTube ViVii MLN CH. 【HZ】</li>
+              <li>ประยุกต์ทักษะเสียงในการสร้าง Sound Effects และ Soundscape สำหรับเกม</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 3: Editorial & Publication Design -->
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+            งานออกแบบรูปเล่มและสื่อสิ่งพิมพ์ (Editorial & Publication Design)
+          </h2>
+
+          <div class="border-l-2 border-purple-600 pl-4 py-1 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-sm font-bold text-slate-900">นิตยสารภาพยนตร์และภาพถ่ายฟิล์ม: FILM IS ALIVE</h3>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800">34 หน้า (Complete Edition)</span>
+            </div>
+            
+            <p class="text-xs text-slate-600 font-medium">
+              บทบาท: <strong>Editorial Designer & Typographer (Adobe InDesign)</strong>
+            </p>
+
+            <ul class="list-disc list-inside text-xs text-slate-600 space-y-1">
+              <li>ออกแบบโครงสร้างกริดเลย์เอาต์ (Grid System) และจัดวางระบบตัวพิมพ์ (Typography Hierarchy) ทั้งเล่ม 34 หน้า</li>
+              <li>ปรับแต่งรูปภาพฟิล์ม จัดเรียงคอลัมน์บทความ และสร้างสรรค์หน้าปก (Cover Design) พร้อมจัดทำรูปแบบสิ่งพิมพ์และ Digital E-Book</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Skills & Education (4 cols) -->
+      <div class="md:col-span-4 space-y-6">
+
+        <!-- Skill Matrix -->
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+            ทักษะความเชี่ยวชาญ (Key Skills)
+          </h2>
+
+          <div class="space-y-4">
+
+            <div>
+              <div class="text-xs font-bold text-slate-900 mb-1.5">Game Design</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-[11px] text-slate-700 font-medium">Core Gameplay
+                  Loop</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-[11px] text-slate-700 font-medium">System
+                  Balancing</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-[11px] text-slate-700 font-medium">Social
+                  Deduction</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-[11px] text-slate-700 font-medium">Playtest
+                  Analysis</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold text-slate-900 mb-1.5">Game Engines & Logic</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-amber-50 text-[11px] text-amber-800 font-medium">Godot Engine</span>
+                <span class="px-2 py-0.5 rounded bg-amber-50 text-[11px] text-amber-800 font-medium">Unity</span>
+                <span class="px-2 py-0.5 rounded bg-amber-50 text-[11px] text-amber-800 font-medium">Game Logic /
+                  Scripting</span>
+                <span class="px-2 py-0.5 rounded bg-amber-50 text-[11px] text-amber-800 font-medium">UI / HUD
+                  Layout</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold text-slate-900 mb-1.5">Audio & Sound Design</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-blue-50 text-[11px] text-blue-800 font-medium">Vocal Mixing</span>
+                <span class="px-2 py-0.5 rounded bg-blue-50 text-[11px] text-blue-800 font-medium">Mastering</span>
+                <span class="px-2 py-0.5 rounded bg-blue-50 text-[11px] text-blue-800 font-medium">SFX / Foley
+                  Design</span>
+                <span class="px-2 py-0.5 rounded bg-blue-50 text-[11px] text-blue-800 font-medium">DAW Production</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold text-slate-900 mb-1.5">2D Digital Art & Concept Design</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-[11px] text-slate-800 font-medium">Character
+                  Design</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-[11px] text-slate-800 font-medium">Foreshortening /
+                  Perspective</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-[11px] text-slate-800 font-medium">Speedpaint &
+                  Silhouette</span>
+                <span class="px-2 py-0.5 rounded bg-slate-100 text-[11px] text-slate-800 font-medium">Monochrome
+                  Shading</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold text-slate-900 mb-1.5">Digital Media & Software</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded bg-purple-50 text-[11px] text-purple-800 font-medium">Adobe
+                  Photoshop</span>
+                <span class="px-2 py-0.5 rounded bg-purple-50 text-[11px] text-purple-800 font-medium">Adobe Premiere
+                  Pro</span>
+                <span class="px-2 py-0.5 rounded bg-purple-50 text-[11px] text-purple-800 font-medium">After
+                  Effects</span>
+                <span class="px-2 py-0.5 rounded bg-purple-50 text-[11px] text-purple-800 font-medium">2D Motion
+                  Animation</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education History -->
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-slate-600"></span>
+            ประวัติการศึกษา (Education)
+          </h2>
+
+          <div class="space-y-3 text-xs">
+            <div class="border-l-2 border-amber-600 pl-3">
+              <div class="font-bold text-slate-900">มหาวิทยาลัยเทคโนโลยีสุรนารี</div>
+              <div class="text-amber-700 font-semibold">ปริญญาตรี ชั้นปีที่ 3 (ปัจจุบัน)</div>
+              <div class="text-slate-500">สำนักวิชาศาสตร์และศิลป์ดิจิทัล<br>สาขาวิชานิเทศศาสตร์ดิจิทัล</div>
+            </div>
+
+            <div class="border-l-2 border-slate-300 pl-3">
+              <div class="font-bold text-slate-800">โรงเรียนสังคมวิทยา</div>
+              <div class="text-slate-500">มัธยมศึกษาตอนปลาย</div>
+            </div>
+
+            <div class="border-l-2 border-slate-200 pl-3">
+              <div class="font-bold text-slate-700">โรงเรียนสวนป่าเขาชะอางค์</div>
+              <div class="text-slate-500">มัธยมศึกษาตอนต้น</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Strengths -->
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-1.5">
+          <div class="font-bold text-slate-900">จุดเด่นในการทำงานร่วมกับทีม</div>
+          <div class="text-[11px] leading-relaxed text-slate-600">
+            • สื่อสารแนวคิดเกมได้ชัดเจน ออกแบบระบบที่ทีมพัฒนาต่อได้ทันที<br>
+            • พร้อมรับฟังฟีดแบ็กจากผู้เล่นจริงและปรับปรุงอย่างรวดเร็ว (Iterative Mindset)<br>
+            • ประสานงานข้ามสายงานได้ดี ทั้งงานดีไซน์ งานภาพ และงานเสียง
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer Note -->
+    <footer class="mt-8 pt-4 border-t border-slate-200 text-center text-[10px] text-slate-400 font-mono">
+      OFFICIAL RESUME // GAME DESIGN & DEVELOPMENT • KITTISAK KHONKEN (กิตติศักดิ์ คนเกณฑ์ "กอล์ฟ" / SHIRO)
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
