@@ -1,0 +1,249 @@
+/*
+ * shared.css — Ad Blocker Pro UI design tokens + shared components.
+ * Dark "emerald glass" theme derived from the brand shield icon
+ * (forest green #2f9e5b on pale mint #cfe6d4). Used by popup,
+ * settings and welcome. Self-contained: system fonts only.
+ */
+
+:root {
+   /* surfaces */
+   --bg-0: #060f0a;
+   --bg-1: #0b1a11;
+   --bg-2: #12291b;
+   --panel: rgba(255, 255, 255, 0.042);
+   --panel-hover: rgba(255, 255, 255, 0.066);
+   --panel-strong: rgba(255, 255, 255, 0.09);
+   --panel-border: rgba(150, 220, 175, 0.13);
+   --panel-border-strong: rgba(150, 220, 175, 0.24);
+
+   /* brand + status */
+   --brand: #2f9e5b;
+   --mint-pale: #cfe6d4;
+   --accent: #34d399;
+   --accent-strong: #10b981;
+   --grad-green: linear-gradient(135deg, #34d399, #10b981);
+   --glow-green: rgba(52, 211, 153, 0.28);
+   --amber: #fbbf24;
+   --amber-strong: #f59e0b;
+   --grad-amber: linear-gradient(135deg, #fbbf24, #f59e0b);
+   --glow-amber: rgba(251, 191, 36, 0.24);
+   --danger: #f87171;
+   --danger-strong: #ef4444;
+   --grad-danger: linear-gradient(135deg, #f87171, #ef4444);
+   --glow-danger: rgba(248, 113, 113, 0.22);
+
+   /* text */
+   --text: #ecf6ee;
+   --text-dim: #a3c2ad;
+   --text-muted: #7f9c8c; /* ≥5:1 on every surface the ambient gradient paints */
+   --text-on-accent: #06231a;
+   --text-on-amber: #2a1d02;
+
+   /* shape + motion */
+   --r-sm: 10px;
+   --r-md: 14px;
+   --r-lg: 18px;
+   --r-full: 999px;
+   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+   --spring: cubic-bezier(0.34, 1.4, 0.5, 1);
+
+   --font: -apple-system, BlinkMacSystemFont, "Segoe UI Variable", "Segoe UI",
+      Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+   --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code", Menlo,
+      Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+   font-family: var(--font);
+   color: var(--text);
+   background: var(--bg-0);
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+}
+
+/* ---- ambient background (fixed glow blobs behind everything) ---- */
+.ambient {
+   position: fixed;
+   inset: 0;
+   z-index: 0;
+   pointer-events: none;
+   overflow: hidden;
+   background: radial-gradient(120% 100% at 80% 0%, var(--bg-2) 0%, var(--bg-1) 45%, var(--bg-0) 100%);
+}
+.ambient::before,
+.ambient::after {
+   content: "";
+   position: absolute;
+   border-radius: 50%;
+   filter: blur(70px);
+   opacity: 0.5;
+}
+.ambient::before {
+   width: 340px;
+   height: 340px;
+   top: -140px;
+   right: -100px;
+   background: radial-gradient(circle, rgba(52, 211, 153, 0.35), transparent 70%);
+   animation: ambientDrift 16s var(--ease) infinite alternate;
+}
+.ambient::after {
+   width: 300px;
+   height: 300px;
+   bottom: -140px;
+   left: -110px;
+   background: radial-gradient(circle, rgba(47, 158, 91, 0.28), transparent 70%);
+   animation: ambientDrift 19s var(--ease) infinite alternate-reverse;
+}
+@keyframes ambientDrift {
+   from { transform: translate3d(0, 0, 0) scale(1); }
+   to { transform: translate3d(-28px, 22px, 0) scale(1.12); }
+}
+
+/* ---- glass card ---- */
+.card {
+   position: relative;
+   background: linear-gradient(150deg, var(--panel-strong), var(--panel));
+   border: 1px solid var(--panel-border);
+   border-radius: var(--r-lg);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+}
+
+/* ---- iOS-style switch ---- */
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 46px;
+   height: 26px;
+   flex: none;
+}
+.switch input {
+   position: absolute;
+   opacity: 0;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   cursor: pointer;
+}
+.switch .track {
+   position: absolute;
+   inset: 0;
+   border-radius: var(--r-full);
+   background: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.08);
+   transition: background 0.25s var(--ease), box-shadow 0.25s var(--ease);
+   pointer-events: none;
+}
+.switch .track::after {
+   content: "";
+   position: absolute;
+   top: 3px;
+   left: 3px;
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   background: #e9f5ec;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+   transition: transform 0.25s var(--spring);
+}
+.switch input:checked + .track {
+   background: var(--grad-green);
+   border-color: transparent;
+   box-shadow: 0 0 16px var(--glow-green);
+}
+.switch input:checked + .track::after {
+   transform: translateX(20px);
+   background: #ffffff;
+}
+.switch input:focus-visible + .track {
+   outline: 2px solid var(--accent);
+   outline-offset: 2px;
+}
+.switch input:disabled + .track { opacity: 0.4; }
+.switch input:disabled { cursor: not-allowed; }
+
+/* ---- buttons ---- */
+.btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   font: 600 13px/1 var(--font);
+   color: var(--text);
+   background: var(--panel);
+   border: 1px solid var(--panel-border);
+   border-radius: var(--r-md);
+   padding: 10px 16px;
+   cursor: pointer;
+   transition: background 0.2s var(--ease), border-color 0.2s var(--ease),
+      transform 0.15s var(--ease), box-shadow 0.2s var(--ease);
+}
+.btn:hover { background: var(--panel-hover); border-color: var(--panel-border-strong); }
+.btn:active { transform: scale(0.97); }
+.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn-primary {
+   background: var(--grad-green);
+   border-color: transparent;
+   color: var(--text-on-accent);
+}
+.btn-primary:hover {
+   background: var(--grad-green);
+   box-shadow: 0 4px 18px var(--glow-green);
+   border-color: transparent;
+}
+.btn-danger {
+   background: var(--grad-danger);
+   border-color: transparent;
+   color: #2a0505;
+}
+.btn-danger:hover { box-shadow: 0 4px 18px var(--glow-danger); border-color: transparent; }
+
+/* ---- text input ---- */
+.field {
+   font: 500 13px/1.2 var(--font);
+   color: var(--text);
+   background: rgba(0, 0, 0, 0.25);
+   border: 1px solid var(--panel-border);
+   border-radius: var(--r-md);
+   padding: 10px 14px;
+   width: 100%;
+   transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.field::placeholder { color: var(--text-muted); }
+.field:focus {
+   outline: none;
+   border-color: var(--accent);
+   box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.15);
+}
+.field[aria-invalid="true"] {
+   border-color: var(--danger);
+   box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.14);
+}
+
+/* ---- scrollbars ---- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+   background: rgba(150, 220, 175, 0.18);
+   border-radius: var(--r-full);
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(150, 220, 175, 0.3); }
+
+/* ---- utility ---- */
+.mono { font-family: var(--font-mono); }
+.hidden { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+   *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+   }
+   /* Demo cursors/ripples only make sense in motion; keyframe-driven states
+      revert to base styles, which are authored as the "protection on" frame. */
+   .mock-cursor, .mock-ripple { display: none !important; }
+}

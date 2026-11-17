@@ -1,0 +1,139 @@
+{
+   "checksum": "ce529f37f0a6d3cea65bd1357b1a9bc3",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13319358548393024",
+            "date_last_used": "13393952728996017",
+            "guid": "3c70dc28-3f24-4e70-a4f7-8ce5dfd2e66d",
+            "id": "7",
+            "name": "Google",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.google.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13320931856404683",
+            "date_last_used": "0",
+            "guid": "d7719c12-28ab-47d3-9993-0302ccaef07d",
+            "id": "8",
+            "name": "ภาพธรรมชาติ ภูเขา ทะเล มีให้เลือกหลายสไตล์ จากศิลปินทั่วประเทศ l Hole of Art",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://holeofart.com/product-category/nature/",
+            "visit_count": 0
+         }, {
+            "date_added": "13321849490522249",
+            "date_last_used": "13412886113911954",
+            "guid": "27fce08e-3131-412f-84a7-459c85bc0d37",
+            "id": "9",
+            "name": "ZerofourManga",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://zerofour-manga.xyz/manga_edit/",
+            "visit_count": 1
+         }, {
+            "date_added": "13321853194774749",
+            "date_last_used": "0",
+            "guid": "9483c0c3-399f-47ef-a035-8427d9c765c5",
+            "id": "10",
+            "name": "ZerofourManga",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://zerofour-manga.xyz/manage/?manga_id=tondF",
+            "visit_count": 0
+         }, {
+            "date_added": "13321853824923334",
+            "date_last_used": "0",
+            "guid": "ae8698b9-2424-4f16-94d5-27a2f864ae57",
+            "id": "11",
+            "name": "ZerofourMangaญ๋",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://zerofour-manga.xyz/createproject/",
+            "visit_count": 0
+         }, {
+            "date_added": "13321887175314570",
+            "date_last_used": "13391339720657841",
+            "guid": "a965b6a4-6b96-4a54-80b8-2c42183518ec",
+            "id": "12",
+            "name": "Creator Center - Let's build our world of ACG together. cheers！- ( ゜- ゜)つロ ~",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://studio.bilibili.tv/archive-list?type=all",
+            "visit_count": 0
+         }, {
+            "date_added": "13321981630958065",
+            "date_last_used": "0",
+            "guid": "c7f02eec-5df0-4939-bb6f-ff74c7fde52e",
+            "id": "13",
+            "name": "New chat",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chat.openai.com/chat",
+            "visit_count": 0
+         }, {
+            "date_added": "13325684259318274",
+            "date_last_used": "0",
+            "guid": "90c0a3e8-0b24-4aad-a0e9-f71aac046857",
+            "id": "14",
+            "name": "อนิเมะฤดูใบไม้ผลิ",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.bilibili.tv/marketing/activity-SFAySML3z3.html",
+            "visit_count": 0
+         } ],
+         "date_added": "13439407876566480",
+         "date_last_used": "0",
+         "date_modified": "13325684259318274",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13439407876566480",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13439407876566480",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13439407876566480",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCFMcZ+qhAQAAKg4QABgBIAAoBTAAOABAABIAKhhLc2R3VFgvMHZSWDhTZ1lOZkdYa1hBPT1IA6AGDBKtAQgJEqgBChxlL2xFT3Q1bk90NERwR2tHZEhEWTU5cHcxSW89EiQyN2ZjZTA4ZS0zMTMxLTQxMmYtODRhNy00NTljODViYzBkMzcYACAAKAAwpKbm7LszOI+Npa+IMUCPjaWviDFKHG9YMkZoTnQrODFXd1d1dGRrZ0RQbzIydVVHQT1aHyId3nJxcGt2dERXYUZEZE5tSEtIc3hqRjJwOTNUTT1lzJEhCcI+AmAFEowBCAUShwEKHHdSQnJaTCs2UEE5YXZLZ2pOUDdKWERMY2Z2cz0SJDVmYzRiOTQ3LWFiZTYtNWY4ZC1iYTYwLTgyYjU1ZjJkYmM2MxgAIAAoADDzvoCppDM4kMGAqaQzQJDBgKmkM0ocbm14NjVzUUR2eEk4VGdFZXYrQStudHRvU240PWUAAAAAwj4CYAASrQEIDhKoAQoccWZxQ0VMUTh2RGMxUUh1dXFEYWhkSjI2Ri93PRIkOTBjMGEzZTgtMGIyNC00YWFkLWEwZTktZjcxYWFjMDQ2ODU3GAAgACgAMKiLpa+IMTi5jaWviDFAuY2lr4gxShxPaW9VWk5wUVdubi9ZZU5YYWphcWZOWC9vSGs9Wh8iHf5IWTA0NmtFaWVVK3lZY2dNN2NzYnFBaWxSaWc9ZQAAAADCPgJgBRKtAQgNEqgBChxPd2MzdjRmZkN3bzMwcTBMTUtrMm5DT1pYMTQ9EiRjN2YwMmVlYy01ZGYwLTQ5MzktYmI2Zi1mZjc0YzdmZGU1MmUYACAAKAAw4qPUqPUyOKWNpa+IMUCljaWviDFKHGtoYXFpTGVJS2gxblRoellvT1FoZU44SmU0VT1aHyId/W11bFpLU0U5WkZ1WjJ3ckhTTFhLS0xWWEFlVT1laRsi88I+AmAFEq0BCAwSqAEKHEx3SUFaeE5UbXhvUjhCNXEwaFVFeFVTSDVyTT0SJGE5NjViNmE0LTZiOTYtNGE1NC04MGI4LTJjNDIxODM1MThlYxgAIAAoADDno9So9TI4zY2lr4gxQM2Npa+IMUocWXhVdXB4bVpSTmIwdCtJN25WL1pLcGhzWTdRPVofIh37U0ZyeXVVaTVCK1gzZEFWNEkxVWtTZnJVOGVBPWVChFVswj4CYAUSrQEICxKoAQocZG5MNWZreThwTmQ0TW5nemFjb1NxR1pORGFNPRIkYWU4Njk4YjktMjQyNC00ZjE2LTk0ZDUtMjdhMmY4NjRhZTU3GAAgACgAMOaj1Kj1Mjj7jKWviDFA+4ylr4gxShxFY3RBQTZjRXROL1g1b1hocGN0Y1haVWNxY0U9Wh8iHfdKbVRBNzRWbUFOVm5TcDBEOUtTVXhFYWEvamM9ZQDtrs/CPgJgBRKMAQgDEocBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQzZjQyNzU0ZS04OTcwLTUxNTktOTkxNC0yMWVmMTkyZDM3NjIYACAAKAAw+uux+scwON7ysfrHMEDe8rH6xzBKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1lAAAAAMI+AmAAEq0BCAoSqAEKHFk0eFpsajF5V0lyWmF3ZnphVWo0ZTJ5em9nQT0SJDk0ODNjMGMzLTM5OWYtNDdlZi1hMDM1LTg0MjdkOWM3NjVjNRgAIAAoADDho9So9TI4tYylr4gxQLWMpa+IMUocc2pieVZsOFFsQlBoT1QrQitrazBoaFNUZVlNPVofIh3vYjYwcmFmc1A1M2RVUmI3S0V1MnorSUFNYlhFPWUA7a7Pwj4CYAUSjAEIAhKHAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkNWQ2OTQ2MmUtYzVhNi01YzBlLTk2OTktNGVmNjMxYzI1NTgxGAAgACgAMPXrsfrHMDjR8bH6xzBA0fGx+scwShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9ZQAAAADCPgJgABKsAQgHEqcBChwrK0xNVWFJR3RTVzNvZzl0T2xOYmtYWE1qaWM9EiQzYzcwZGMyOC0zZjI0LTRlNzAtYTRmNy04Y2U1ZGZkMmU2NmQYACAAKAAw46PUqPUyONKMpa+IMUDSjKWviDFKHCtnaVBpVVlLM09yUjZDUm1VU3RwSDNTQjQ2az1aHiIcenhLYWhieGhxdGpkVUdQRlZxM3Rua0t6THhVPWWU6RYUwj4CYAUSrQEICBKoAQocOFF2M2pFVEdhbXNyUUt4RGZkOHNzLzIwUmtVPRIkZDc3MTljMTItMjhhYi00N2QzLTk5OTMtMDMwMmNjYWVmMDdkGAAgACgAMOSj1Kj1MjjnjKWviDFA54ylr4gxShxGYkpzZWhTNDU1Qk5wVnJKd2lZWnpYdHJkOGM9Wh8iHb1EQjhVcDBsajQ3SjBTWXdVbmZWb3pOREFzTFE9ZakLV+zCPgJgBRKMAQgBEocBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ2NDFlMjI4YS0zOWVkLTVlN2YtOTI0My04NTNiNmEzMmU3NDIYACAAKAAw9Oux+scwOLLxsfrHMECy8bH6xzBKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1lAAAAAMI+AmAAMAA4AA==",
+   "version": 1
+}

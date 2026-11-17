@@ -1,0 +1,232 @@
+{
+   "appDesc": {
+      "message": "Detenemos anuncios molestos, popups, rastreadores en sitios populares y omitimos los anuncios de YouTube."
+   },
+   "appName": {
+      "message": "Ad Blocker Pro - Detener los anuncios invasivos"
+   },
+   "uiAboutDesc": {
+      "message": "Bloquea anuncios invasivos, ventanas emergentes y rastreadores, con control por sitio cuando lo necesitas."
+   },
+   "uiAddAllowed": {
+      "message": "Permitir"
+   },
+   "uiAddBlocked": {
+      "message": "Bloquear"
+   },
+   "uiAddPaused": {
+      "message": "Pausar"
+   },
+   "uiAddPlaceholder": {
+      "message": "ejemplo.com — o pega una URL completa"
+   },
+   "uiAllowedDesc": {
+      "message": "Ad Blocker Pro no actúa en absoluto en estos sitios: allí no se bloquean anuncios ni rastreadores."
+   },
+   "uiAllowedEmpty": {
+      "message": "Aún no hay sitios permitidos."
+   },
+   "uiAllowedNote": {
+      "message": "Al quitar un sitio, el permiso termina de inmediato en este dispositivo; la actualización compartida de filtros completa el proceso en unas 12 horas."
+   },
+   "uiAllowedTitle": {
+      "message": "Sitios permitidos"
+   },
+   "uiBlockedDesc": {
+      "message": "Estos sitios se detienen por completo: la propia página no carga, no solo sus anuncios."
+   },
+   "uiBlockedEmpty": {
+      "message": "Aún no hay sitios bloqueados."
+   },
+   "uiBlockedTitle": {
+      "message": "Sitios bloqueados"
+   },
+   "uiErrChildConflict": {
+      "message": "Esto anularía sitios más específicos de otra lista: quita primero esas entradas."
+   },
+   "uiErrConflictAllowed": {
+      "message": "Este sitio está en tu lista de permitidos: quítalo primero de allí."
+   },
+   "uiErrConflictBlocked": {
+      "message": "Este sitio está en tu lista de bloqueados: quítalo primero de allí."
+   },
+   "uiErrConflictPaused": {
+      "message": "Este sitio está en pausa: quítalo primero de los sitios en pausa."
+   },
+   "uiErrDup": {
+      "message": "Este sitio ya está cubierto por la lista."
+   },
+   "uiErrInvalid": {
+      "message": "Eso no parece una dirección de sitio web."
+   },
+   "uiFeaturesDesc": {
+      "message": "Extras opcionales: actívalos o desactívalos cuando quieras."
+   },
+   "uiFeaturesTitle": {
+      "message": "Funciones"
+   },
+   "uiObAutoClose": {
+      "message": "Esta pestaña se cierra en $SECONDS$ s",
+      "placeholders": {
+         "seconds": {
+            "content": "$1"
+         }
+      }
+   },
+   "uiObExtensionsMenu": {
+      "message": "Extensiones"
+   },
+   "uiObGotIt": {
+      "message": "Entendido — a navegar"
+   },
+   "uiObPageTitle": {
+      "message": "Bienvenido a Ad Blocker Pro"
+   },
+   "uiObPinHint": {
+      "message": "Haz clic en la pieza de puzle aquí arriba para fijarlo"
+   },
+   "uiObSubtitle": {
+      "message": "Ad Blocker Pro está activo y ya bloquea anuncios y rastreadores. Dos consejos rápidos antes de empezar:"
+   },
+   "uiObTip1Desc": {
+      "message": "Haz clic en la pieza de puzle de la barra de herramientas y luego en el pin junto a Ad Blocker Pro. Tu escudo queda a un clic de distancia."
+   },
+   "uiObTip1Title": {
+      "message": "Fíjalo para controlarlo con un clic"
+   },
+   "uiObTip2Desc": {
+      "message": "Si un sitio falla, abre el popup y pulsa el interruptor: el bloqueo se pausa solo para ese sitio hasta que vuelvas a activarlo."
+   },
+   "uiObTip2Title": {
+      "message": "Pausa en cualquier sitio"
+   },
+   "uiObTitle": {
+      "message": "Estás protegido"
+   },
+   "uiOpenSettings": {
+      "message": "Ajustes"
+   },
+   "uiOptionsPageTitle": {
+      "message": "Ad Blocker Pro — Ajustes"
+   },
+   "uiOptionsSubtitle": {
+      "message": "Ajustes y listas de sitios"
+   },
+   "uiPausedDesc": {
+      "message": "El bloqueo está desactivado en estos sitios, normalmente desde el interruptor de pausa del popup. Las pausas solo se guardan en este dispositivo."
+   },
+   "uiPausedEmpty": {
+      "message": "No hay nada en pausa."
+   },
+   "uiPausedTitle": {
+      "message": "Sitios en pausa"
+   },
+   "uiPopupBrowserPage": {
+      "message": "Página del navegador"
+   },
+   "uiPopupHintActive": {
+      "message": "Los anuncios y rastreadores se están bloqueando en este sitio."
+   },
+   "uiPopupHintAllowed": {
+      "message": "Este sitio está en tu lista de permitidos, así que Ad Blocker Pro no actúa aquí."
+   },
+   "uiPopupHintBlocked": {
+      "message": "Has bloqueado este sitio por completo: no cargará en absoluto. Gestiónalo en los ajustes."
+   },
+   "uiPopupHintPaused": {
+      "message": "El bloqueo está en pausa aquí, así que pueden aparecer anuncios. Pulsa el interruptor para reanudarlo."
+   },
+   "uiPopupHintRestricted": {
+      "message": "Las páginas del navegador y la Web Store no se pueden filtrar."
+   },
+   "uiPopupManageAllowed": {
+      "message": "Gestionar sitios permitidos"
+   },
+   "uiPopupManageBlocked": {
+      "message": "Gestionar sitios bloqueados"
+   },
+   "uiPopupSettings": {
+      "message": "Gestionar sitios y ajustes"
+   },
+   "uiPopupStatLabel": {
+      "message": "Páginas protegidas"
+   },
+   "uiPopupStatusActive": {
+      "message": "Protección activa"
+   },
+   "uiPopupStatusAllowed": {
+      "message": "Siempre permitido"
+   },
+   "uiPopupStatusBlocked": {
+      "message": "Bloqueado por ti"
+   },
+   "uiPopupStatusPaused": {
+      "message": "En pausa en este sitio"
+   },
+   "uiPopupStatusRestricted": {
+      "message": "Nada que bloquear aquí"
+   },
+   "uiPopupToggleAria": {
+      "message": "Pausar o reanudar el bloqueo en este sitio"
+   },
+   "uiPopupToggleOff": {
+      "message": "Bloqueo desactivado"
+   },
+   "uiPopupToggleOn": {
+      "message": "Bloqueo activado"
+   },
+   "uiRemove": {
+      "message": "Quitar"
+   },
+   "uiResetBtn": {
+      "message": "Restaurar valores predeterminados"
+   },
+   "uiResetConfirmLabel": {
+      "message": "¿Vaciar las tres listas?"
+   },
+   "uiResetDesc": {
+      "message": "Vacía tus listas de sitios permitidos, bloqueados y en pausa. Los datos de filtrado no se ven afectados."
+   },
+   "uiResetNo": {
+      "message": "Cancelar"
+   },
+   "uiResetTitle": {
+      "message": "Restaurar valores predeterminados"
+   },
+   "uiResetYes": {
+      "message": "Sí, vaciarlas"
+   },
+   "uiStatExplainer": {
+      "message": "Cuenta cada página visitada con el bloqueo activo: páginas protegidas, no anuncios individuales."
+   },
+   "uiTabAbout": {
+      "message": "Acerca de"
+   },
+   "uiTabAllowed": {
+      "message": "Sitios permitidos"
+   },
+   "uiTabBlocked": {
+      "message": "Sitios bloqueados"
+   },
+   "uiTabFeatures": {
+      "message": "Funciones"
+   },
+   "uiTabPaused": {
+      "message": "Sitios en pausa"
+   },
+   "uiTabsAria": {
+      "message": "Secciones de ajustes"
+   },
+   "uiYtPopupDesc": {
+      "message": "Adelanta los anuncios de vídeo que se cuelan"
+   },
+   "uiYtSettingsDesc": {
+      "message": "Algunos anuncios de vídeo de YouTube van integrados en la propia transmisión y no se pueden filtrar. Con esta opción activada, se adelantan hasta el final en cuanto empiezan. Solo se aplica en youtube.com."
+   },
+   "uiYtTitle": {
+      "message": "Anuncios de YouTube"
+   },
+   "uiYtToggleAria": {
+      "message": "Activar o desactivar el adelantado de los anuncios de vídeo de YouTube"
+   }
+}

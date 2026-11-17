@@ -1,0 +1,232 @@
+{
+   "appDesc": {
+      "message": "Wir stoppen lästige Anzeigen, Popups, Tracker auf beliebten Websites und überspringen YouTube-Anzeigen."
+   },
+   "appName": {
+      "message": "Ad Blocker Pro - Stoppen Sie invasive Werbung"
+   },
+   "uiAboutDesc": {
+      "message": "Blockiert invasive Werbung, Pop-ups und Tracker, mit Kontrolle pro Website, wenn Sie sie brauchen."
+   },
+   "uiAddAllowed": {
+      "message": "Erlauben"
+   },
+   "uiAddBlocked": {
+      "message": "Blockieren"
+   },
+   "uiAddPaused": {
+      "message": "Pausieren"
+   },
+   "uiAddPlaceholder": {
+      "message": "beispiel.de — oder eine vollständige URL einfügen"
+   },
+   "uiAllowedDesc": {
+      "message": "Auf diesen Websites hält sich Ad Blocker Pro vollständig zurück — dort werden keine Werbung und keine Tracker blockiert."
+   },
+   "uiAllowedEmpty": {
+      "message": "Noch keine erlaubten Websites."
+   },
+   "uiAllowedNote": {
+      "message": "Beim Entfernen einer Website endet die Ausnahme auf diesem Gerät sofort; das gemeinsame Filter-Update schließt den Vorgang innerhalb von etwa 12 Stunden ab."
+   },
+   "uiAllowedTitle": {
+      "message": "Erlaubte Websites"
+   },
+   "uiBlockedDesc": {
+      "message": "Diese Websites werden vollständig gestoppt — die Seite selbst lädt nicht, nicht nur ihre Werbung."
+   },
+   "uiBlockedEmpty": {
+      "message": "Noch keine blockierten Websites."
+   },
+   "uiBlockedTitle": {
+      "message": "Blockierte Websites"
+   },
+   "uiErrChildConflict": {
+      "message": "Dies würde spezifischere Websites auf einer anderen Liste außer Kraft setzen — entfernen Sie diese Einträge zuerst."
+   },
+   "uiErrConflictAllowed": {
+      "message": "Diese Website steht auf Ihrer Erlaubt-Liste — entfernen Sie sie zuerst dort."
+   },
+   "uiErrConflictBlocked": {
+      "message": "Diese Website steht auf Ihrer Blockiert-Liste — entfernen Sie sie zuerst dort."
+   },
+   "uiErrConflictPaused": {
+      "message": "Diese Website ist derzeit pausiert — entfernen Sie sie zuerst aus den pausierten Websites."
+   },
+   "uiErrDup": {
+      "message": "Diese Website ist bereits durch die Liste abgedeckt."
+   },
+   "uiErrInvalid": {
+      "message": "Das sieht nicht wie eine Website-Adresse aus."
+   },
+   "uiFeaturesDesc": {
+      "message": "Optionale Extras — jederzeit ein- oder ausschaltbar."
+   },
+   "uiFeaturesTitle": {
+      "message": "Funktionen"
+   },
+   "uiObAutoClose": {
+      "message": "Dieser Tab schließt sich in $SECONDS$ s",
+      "placeholders": {
+         "seconds": {
+            "content": "$1"
+         }
+      }
+   },
+   "uiObExtensionsMenu": {
+      "message": "Erweiterungen"
+   },
+   "uiObGotIt": {
+      "message": "Verstanden — los geht's"
+   },
+   "uiObPageTitle": {
+      "message": "Willkommen bei Ad Blocker Pro"
+   },
+   "uiObPinHint": {
+      "message": "Klicken Sie hier oben auf das Puzzleteil zum Anheften"
+   },
+   "uiObSubtitle": {
+      "message": "Ad Blocker Pro ist aktiv und blockiert bereits Werbung und Tracker. Zwei kurze Tipps, bevor es losgeht:"
+   },
+   "uiObTip1Desc": {
+      "message": "Klicken Sie auf das Puzzleteil in der Symbolleiste und dann auf die Stecknadel neben Ad Blocker Pro. So bleibt Ihr Schutzschild einen Klick entfernt."
+   },
+   "uiObTip1Title": {
+      "message": "Anheften für Ein-Klick-Kontrolle"
+   },
+   "uiObTip2Desc": {
+      "message": "Wenn eine Website Probleme macht, öffnen Sie das Popup und legen den Schalter um — die Blockierung pausiert nur für diese Website, bis Sie ihn wieder umlegen."
+   },
+   "uiObTip2Title": {
+      "message": "Auf jeder Website pausierbar"
+   },
+   "uiObTitle": {
+      "message": "Sie sind geschützt"
+   },
+   "uiOpenSettings": {
+      "message": "Einstellungen"
+   },
+   "uiOptionsPageTitle": {
+      "message": "Ad Blocker Pro — Einstellungen"
+   },
+   "uiOptionsSubtitle": {
+      "message": "Einstellungen & Website-Listen"
+   },
+   "uiPausedDesc": {
+      "message": "Auf diesen Websites ist die Blockierung ausgeschaltet — meist über den Pause-Schalter im Popup. Pausen gelten nur auf diesem Gerät."
+   },
+   "uiPausedEmpty": {
+      "message": "Nichts ist pausiert."
+   },
+   "uiPausedTitle": {
+      "message": "Pausierte Websites"
+   },
+   "uiPopupBrowserPage": {
+      "message": "Browserseite"
+   },
+   "uiPopupHintActive": {
+      "message": "Werbung und Tracker werden auf dieser Website blockiert."
+   },
+   "uiPopupHintAllowed": {
+      "message": "Diese Website steht auf Ihrer Erlaubt-Liste, deshalb hält sich Ad Blocker Pro hier zurück."
+   },
+   "uiPopupHintBlocked": {
+      "message": "Sie haben diese Website vollständig blockiert — sie lädt gar nicht mehr. Verwalten Sie sie in den Einstellungen."
+   },
+   "uiPopupHintPaused": {
+      "message": "Die Blockierung ist hier pausiert, daher kann Werbung erscheinen. Zum Fortsetzen den Schalter umlegen."
+   },
+   "uiPopupHintRestricted": {
+      "message": "Browserseiten und der Web Store können nicht gefiltert werden."
+   },
+   "uiPopupManageAllowed": {
+      "message": "Erlaubte Websites verwalten"
+   },
+   "uiPopupManageBlocked": {
+      "message": "Blockierte Websites verwalten"
+   },
+   "uiPopupSettings": {
+      "message": "Websites & Einstellungen verwalten"
+   },
+   "uiPopupStatLabel": {
+      "message": "Geschützte Seiten"
+   },
+   "uiPopupStatusActive": {
+      "message": "Schutz aktiv"
+   },
+   "uiPopupStatusAllowed": {
+      "message": "Immer erlaubt"
+   },
+   "uiPopupStatusBlocked": {
+      "message": "Von Ihnen blockiert"
+   },
+   "uiPopupStatusPaused": {
+      "message": "Auf dieser Website pausiert"
+   },
+   "uiPopupStatusRestricted": {
+      "message": "Hier gibt es nichts zu blockieren"
+   },
+   "uiPopupToggleAria": {
+      "message": "Blockierung auf dieser Website pausieren oder fortsetzen"
+   },
+   "uiPopupToggleOff": {
+      "message": "Blockierung aus"
+   },
+   "uiPopupToggleOn": {
+      "message": "Blockierung an"
+   },
+   "uiRemove": {
+      "message": "Entfernen"
+   },
+   "uiResetBtn": {
+      "message": "Standard wiederherstellen"
+   },
+   "uiResetConfirmLabel": {
+      "message": "Alle drei Listen leeren?"
+   },
+   "uiResetDesc": {
+      "message": "Leert Ihre Listen erlaubter, blockierter und pausierter Websites. Filterdaten bleiben unberührt."
+   },
+   "uiResetNo": {
+      "message": "Abbrechen"
+   },
+   "uiResetTitle": {
+      "message": "Standard wiederherstellen"
+   },
+   "uiResetYes": {
+      "message": "Ja, leeren"
+   },
+   "uiStatExplainer": {
+      "message": "Zählt jeden Seitenaufruf, bei dem die Blockierung aktiv war — geschützte Seiten, nicht einzelne Anzeigen."
+   },
+   "uiTabAbout": {
+      "message": "Über"
+   },
+   "uiTabAllowed": {
+      "message": "Erlaubte Websites"
+   },
+   "uiTabBlocked": {
+      "message": "Blockierte Websites"
+   },
+   "uiTabFeatures": {
+      "message": "Funktionen"
+   },
+   "uiTabPaused": {
+      "message": "Pausierte Websites"
+   },
+   "uiTabsAria": {
+      "message": "Einstellungsbereiche"
+   },
+   "uiYtPopupDesc": {
+      "message": "Videoanzeigen vorspulen, die durchrutschen"
+   },
+   "uiYtSettingsDesc": {
+      "message": "Manche YouTube-Videoanzeigen sind direkt in den Videostream eingebettet und lassen sich nicht herausfiltern. Ist diese Option aktiv, werden sie beim Start sofort bis zum Ende vorgespult. Gilt nur auf youtube.com."
+   },
+   "uiYtTitle": {
+      "message": "YouTube-Werbung"
+   },
+   "uiYtToggleAria": {
+      "message": "Vorspulen von YouTube-Videoanzeigen ein- oder ausschalten"
+   }
+}

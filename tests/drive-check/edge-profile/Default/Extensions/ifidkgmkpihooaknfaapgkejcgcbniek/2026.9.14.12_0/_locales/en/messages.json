@@ -1,0 +1,232 @@
+{
+   "appDesc": {
+      "message": "Blocks some ad networks but leaves alone work sites."
+   },
+   "appName": {
+      "message": "Ad Blocker Pro - stop invasive ads"
+   },
+   "uiAboutDesc": {
+      "message": "Blocks invasive ads, pop-ups and trackers, with per-site control when you need it."
+   },
+   "uiAddAllowed": {
+      "message": "Allow"
+   },
+   "uiAddBlocked": {
+      "message": "Block"
+   },
+   "uiAddPaused": {
+      "message": "Pause"
+   },
+   "uiAddPlaceholder": {
+      "message": "example.com — or paste a full URL"
+   },
+   "uiAllowedDesc": {
+      "message": "Ad Blocker Pro stands down completely on these sites — no ads or trackers are blocked there."
+   },
+   "uiAllowedEmpty": {
+      "message": "No allowed sites yet."
+   },
+   "uiAllowedNote": {
+      "message": "Removing a site stops the allowance right away on this device; the shared filter update finishes the job within about 12 hours."
+   },
+   "uiAllowedTitle": {
+      "message": "Allowed sites"
+   },
+   "uiBlockedDesc": {
+      "message": "These sites are stopped entirely — the page itself won't load, not just its ads."
+   },
+   "uiBlockedEmpty": {
+      "message": "No blocked sites yet."
+   },
+   "uiBlockedTitle": {
+      "message": "Blocked sites"
+   },
+   "uiErrChildConflict": {
+      "message": "This would override more specific sites on another list — remove those entries first."
+   },
+   "uiErrConflictAllowed": {
+      "message": "This site is on your Allowed list — remove it there first."
+   },
+   "uiErrConflictBlocked": {
+      "message": "This site is on your Blocked list — remove it there first."
+   },
+   "uiErrConflictPaused": {
+      "message": "This site is currently paused — remove it from Paused sites first."
+   },
+   "uiErrDup": {
+      "message": "This site is already covered by the list."
+   },
+   "uiErrInvalid": {
+      "message": "That doesn't look like a website address."
+   },
+   "uiFeaturesDesc": {
+      "message": "Optional extras — switch them on or off at any time."
+   },
+   "uiFeaturesTitle": {
+      "message": "Features"
+   },
+   "uiObAutoClose": {
+      "message": "This tab closes in $SECONDS$s",
+      "placeholders": {
+         "seconds": {
+            "content": "$1"
+         }
+      }
+   },
+   "uiObExtensionsMenu": {
+      "message": "Extensions"
+   },
+   "uiObGotIt": {
+      "message": "Got it — let's browse"
+   },
+   "uiObPageTitle": {
+      "message": "Welcome to Ad Blocker Pro"
+   },
+   "uiObPinHint": {
+      "message": "Click the puzzle piece up here to pin"
+   },
+   "uiObSubtitle": {
+      "message": "Ad Blocker Pro is on and already blocking ads and trackers. Two quick tips before you go:"
+   },
+   "uiObTip1Desc": {
+      "message": "Click the puzzle piece in your toolbar, then the pin next to Ad Blocker Pro. Your shield stays one click away."
+   },
+   "uiObTip1Title": {
+      "message": "Pin it for one-click control"
+   },
+   "uiObTip2Desc": {
+      "message": "If a site misbehaves, open the popup and flip the switch — blocking pauses for that site only, until you flip it back."
+   },
+   "uiObTip2Title": {
+      "message": "Pause on any site"
+   },
+   "uiObTitle": {
+      "message": "You're protected"
+   },
+   "uiOpenSettings": {
+      "message": "Settings"
+   },
+   "uiOptionsPageTitle": {
+      "message": "Ad Blocker Pro — Settings"
+   },
+   "uiOptionsSubtitle": {
+      "message": "Settings & site lists"
+   },
+   "uiPausedDesc": {
+      "message": "Blocking is switched off on these sites — usually from the popup's pause switch. Pauses stay on this device only."
+   },
+   "uiPausedEmpty": {
+      "message": "Nothing is paused."
+   },
+   "uiPausedTitle": {
+      "message": "Paused sites"
+   },
+   "uiPopupBrowserPage": {
+      "message": "Browser page"
+   },
+   "uiPopupHintActive": {
+      "message": "Ads and trackers are being blocked on this site."
+   },
+   "uiPopupHintAllowed": {
+      "message": "This site is on your allowed list, so Ad Blocker Pro stands down here."
+   },
+   "uiPopupHintBlocked": {
+      "message": "You've blocked this site entirely — it won't load at all. Manage it in settings."
+   },
+   "uiPopupHintPaused": {
+      "message": "Blocking is paused here, so ads may appear. Flip the switch to resume."
+   },
+   "uiPopupHintRestricted": {
+      "message": "Browser pages and the Web Store can't be filtered."
+   },
+   "uiPopupManageAllowed": {
+      "message": "Manage allowed sites"
+   },
+   "uiPopupManageBlocked": {
+      "message": "Manage blocked sites"
+   },
+   "uiPopupSettings": {
+      "message": "Manage sites & settings"
+   },
+   "uiPopupStatLabel": {
+      "message": "Pages protected"
+   },
+   "uiPopupStatusActive": {
+      "message": "Protection active"
+   },
+   "uiPopupStatusAllowed": {
+      "message": "Always allowed"
+   },
+   "uiPopupStatusBlocked": {
+      "message": "Blocked by you"
+   },
+   "uiPopupStatusPaused": {
+      "message": "Paused on this site"
+   },
+   "uiPopupStatusRestricted": {
+      "message": "Nothing to block here"
+   },
+   "uiPopupToggleAria": {
+      "message": "Pause or resume blocking on this site"
+   },
+   "uiPopupToggleOff": {
+      "message": "Blocking off"
+   },
+   "uiPopupToggleOn": {
+      "message": "Blocking on"
+   },
+   "uiRemove": {
+      "message": "Remove"
+   },
+   "uiResetBtn": {
+      "message": "Restore defaults"
+   },
+   "uiResetConfirmLabel": {
+      "message": "Clear all three lists?"
+   },
+   "uiResetDesc": {
+      "message": "Clears your allowed, blocked and paused site lists. Filter data is unaffected."
+   },
+   "uiResetNo": {
+      "message": "Cancel"
+   },
+   "uiResetTitle": {
+      "message": "Restore defaults"
+   },
+   "uiResetYes": {
+      "message": "Yes, clear them"
+   },
+   "uiStatExplainer": {
+      "message": "Counts every page visit where blocking was active — pages protected, not individual ads."
+   },
+   "uiTabAbout": {
+      "message": "About"
+   },
+   "uiTabAllowed": {
+      "message": "Allowed sites"
+   },
+   "uiTabBlocked": {
+      "message": "Blocked sites"
+   },
+   "uiTabFeatures": {
+      "message": "Features"
+   },
+   "uiTabPaused": {
+      "message": "Paused sites"
+   },
+   "uiTabsAria": {
+      "message": "Settings sections"
+   },
+   "uiYtPopupDesc": {
+      "message": "Fast-forward video ads that slip through"
+   },
+   "uiYtSettingsDesc": {
+      "message": "Some YouTube video ads are stitched into the stream itself and can't be filtered out. With this on, they're fast-forwarded to the end the moment they start. Applies on youtube.com only."
+   },
+   "uiYtTitle": {
+      "message": "YouTube ads"
+   },
+   "uiYtToggleAria": {
+      "message": "Fast-forward YouTube video ads on or off"
+   }
+}

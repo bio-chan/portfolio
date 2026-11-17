@@ -1,0 +1,232 @@
+{
+   "appDesc": {
+      "message": "We stoppen vervelende advertenties, pop-ups, trackers op populaire sites en slaan YouTube-advertenties over."
+   },
+   "appName": {
+      "message": "Ad Blocker Pro - Stop invasieve advertenties"
+   },
+   "uiAboutDesc": {
+      "message": "Blokkeert invasieve advertenties, pop-ups en trackers, met controle per site wanneer je die nodig hebt."
+   },
+   "uiAddAllowed": {
+      "message": "Toestaan"
+   },
+   "uiAddBlocked": {
+      "message": "Blokkeren"
+   },
+   "uiAddPaused": {
+      "message": "Pauzeren"
+   },
+   "uiAddPlaceholder": {
+      "message": "voorbeeld.nl — of plak een volledige URL"
+   },
+   "uiAllowedDesc": {
+      "message": "Op deze sites doet Ad Blocker Pro helemaal niets — daar worden geen advertenties of trackers geblokkeerd."
+   },
+   "uiAllowedEmpty": {
+      "message": "Nog geen toegestane sites."
+   },
+   "uiAllowedNote": {
+      "message": "Als je een site verwijdert, stopt de toestemming direct op dit apparaat; de gedeelde filterupdate maakt het binnen ongeveer 12 uur af."
+   },
+   "uiAllowedTitle": {
+      "message": "Toegestane sites"
+   },
+   "uiBlockedDesc": {
+      "message": "Deze sites worden volledig gestopt — de pagina zelf laadt niet, niet alleen de advertenties."
+   },
+   "uiBlockedEmpty": {
+      "message": "Nog geen geblokkeerde sites."
+   },
+   "uiBlockedTitle": {
+      "message": "Geblokkeerde sites"
+   },
+   "uiErrChildConflict": {
+      "message": "Dit zou specifiekere sites op een andere lijst overschrijven — verwijder die vermeldingen eerst."
+   },
+   "uiErrConflictAllowed": {
+      "message": "Deze site staat op je lijst met toegestane sites — verwijder hem daar eerst."
+   },
+   "uiErrConflictBlocked": {
+      "message": "Deze site staat op je lijst met geblokkeerde sites — verwijder hem daar eerst."
+   },
+   "uiErrConflictPaused": {
+      "message": "Deze site is momenteel gepauzeerd — verwijder hem eerst uit de gepauzeerde sites."
+   },
+   "uiErrDup": {
+      "message": "Deze site valt al onder de lijst."
+   },
+   "uiErrInvalid": {
+      "message": "Dat ziet er niet uit als een websiteadres."
+   },
+   "uiFeaturesDesc": {
+      "message": "Optionele extra's — zet ze aan of uit wanneer je wilt."
+   },
+   "uiFeaturesTitle": {
+      "message": "Functies"
+   },
+   "uiObAutoClose": {
+      "message": "Dit tabblad sluit over $SECONDS$ s",
+      "placeholders": {
+         "seconds": {
+            "content": "$1"
+         }
+      }
+   },
+   "uiObExtensionsMenu": {
+      "message": "Extensies"
+   },
+   "uiObGotIt": {
+      "message": "Begrepen — laten we browsen"
+   },
+   "uiObPageTitle": {
+      "message": "Welkom bij Ad Blocker Pro"
+   },
+   "uiObPinHint": {
+      "message": "Klik hierboven op het puzzelstukje om vast te zetten"
+   },
+   "uiObSubtitle": {
+      "message": "Ad Blocker Pro staat aan en blokkeert al advertenties en trackers. Twee snelle tips voordat je verdergaat:"
+   },
+   "uiObTip1Desc": {
+      "message": "Klik op het puzzelstukje in je werkbalk en daarna op de punaise naast Ad Blocker Pro. Zo blijft je schild één klik verwijderd."
+   },
+   "uiObTip1Title": {
+      "message": "Zet vast voor bediening met één klik"
+   },
+   "uiObTip2Desc": {
+      "message": "Doet een site vervelend, open dan de popup en zet de schakelaar om — de blokkering pauzeert alleen voor die site, totdat je hem weer omzet."
+   },
+   "uiObTip2Title": {
+      "message": "Pauzeer op elke site"
+   },
+   "uiObTitle": {
+      "message": "Je bent beschermd"
+   },
+   "uiOpenSettings": {
+      "message": "Instellingen"
+   },
+   "uiOptionsPageTitle": {
+      "message": "Ad Blocker Pro — Instellingen"
+   },
+   "uiOptionsSubtitle": {
+      "message": "Instellingen en sitelijsten"
+   },
+   "uiPausedDesc": {
+      "message": "Op deze sites is de blokkering uitgeschakeld — meestal via de pauzeschakelaar in de popup. Pauzes gelden alleen op dit apparaat."
+   },
+   "uiPausedEmpty": {
+      "message": "Er is niets gepauzeerd."
+   },
+   "uiPausedTitle": {
+      "message": "Gepauzeerde sites"
+   },
+   "uiPopupBrowserPage": {
+      "message": "Browserpagina"
+   },
+   "uiPopupHintActive": {
+      "message": "Advertenties en trackers worden op deze site geblokkeerd."
+   },
+   "uiPopupHintAllowed": {
+      "message": "Deze site staat op je lijst met toegestane sites, dus Ad Blocker Pro doet hier niets."
+   },
+   "uiPopupHintBlocked": {
+      "message": "Je hebt deze site volledig geblokkeerd — hij laadt helemaal niet. Beheer hem in de instellingen."
+   },
+   "uiPopupHintPaused": {
+      "message": "De blokkering is hier gepauzeerd, dus advertenties kunnen verschijnen. Zet de schakelaar om om te hervatten."
+   },
+   "uiPopupHintRestricted": {
+      "message": "Browserpagina's en de Web Store kunnen niet worden gefilterd."
+   },
+   "uiPopupManageAllowed": {
+      "message": "Toegestane sites beheren"
+   },
+   "uiPopupManageBlocked": {
+      "message": "Geblokkeerde sites beheren"
+   },
+   "uiPopupSettings": {
+      "message": "Sites en instellingen beheren"
+   },
+   "uiPopupStatLabel": {
+      "message": "Beschermde pagina's"
+   },
+   "uiPopupStatusActive": {
+      "message": "Bescherming actief"
+   },
+   "uiPopupStatusAllowed": {
+      "message": "Altijd toegestaan"
+   },
+   "uiPopupStatusBlocked": {
+      "message": "Door jou geblokkeerd"
+   },
+   "uiPopupStatusPaused": {
+      "message": "Gepauzeerd op deze site"
+   },
+   "uiPopupStatusRestricted": {
+      "message": "Hier valt niets te blokkeren"
+   },
+   "uiPopupToggleAria": {
+      "message": "Blokkering op deze site pauzeren of hervatten"
+   },
+   "uiPopupToggleOff": {
+      "message": "Blokkering uit"
+   },
+   "uiPopupToggleOn": {
+      "message": "Blokkering aan"
+   },
+   "uiRemove": {
+      "message": "Verwijderen"
+   },
+   "uiResetBtn": {
+      "message": "Standaardinstellingen herstellen"
+   },
+   "uiResetConfirmLabel": {
+      "message": "Alle drie de lijsten leegmaken?"
+   },
+   "uiResetDesc": {
+      "message": "Maakt je lijsten met toegestane, geblokkeerde en gepauzeerde sites leeg. Filtergegevens blijven onaangetast."
+   },
+   "uiResetNo": {
+      "message": "Annuleren"
+   },
+   "uiResetTitle": {
+      "message": "Standaardinstellingen herstellen"
+   },
+   "uiResetYes": {
+      "message": "Ja, leegmaken"
+   },
+   "uiStatExplainer": {
+      "message": "Telt elk paginabezoek waarbij de blokkering actief was — beschermde pagina's, geen losse advertenties."
+   },
+   "uiTabAbout": {
+      "message": "Over"
+   },
+   "uiTabAllowed": {
+      "message": "Toegestane sites"
+   },
+   "uiTabBlocked": {
+      "message": "Geblokkeerde sites"
+   },
+   "uiTabFeatures": {
+      "message": "Functies"
+   },
+   "uiTabPaused": {
+      "message": "Gepauzeerde sites"
+   },
+   "uiTabsAria": {
+      "message": "Instellingsonderdelen"
+   },
+   "uiYtPopupDesc": {
+      "message": "Spoel videoadvertenties door die erdoorheen glippen"
+   },
+   "uiYtSettingsDesc": {
+      "message": "Sommige YouTube-videoadvertenties zitten in de videostream zelf verwerkt en zijn niet weg te filteren. Met deze optie aan worden ze doorgespoeld naar het einde zodra ze starten. Geldt alleen op youtube.com."
+   },
+   "uiYtTitle": {
+      "message": "YouTube-advertenties"
+   },
+   "uiYtToggleAria": {
+      "message": "Doorspoelen van YouTube-videoadvertenties aan- of uitzetten"
+   }
+}

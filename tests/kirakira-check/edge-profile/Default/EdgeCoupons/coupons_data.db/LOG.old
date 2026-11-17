@@ -1,0 +1,5 @@
+2026/11/18-00:10:00.890 fc30 Creating DB C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/11/18-00:10:01.014 fc30 Reusing MANIFEST C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/11/18-00:10:01.558 fc24 Level-0 table #5: started
+2026/11/18-00:10:01.570 fc24 Level-0 table #5: 683273 bytes OK
+2026/11/18-00:10:01.602 fc24 Delete type=0 #3

@@ -1,0 +1,6 @@
+2026/11/18-00:16:45.358 9410 Reusing MANIFEST C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/11/18-00:16:45.360 9410 Recovering log #4
+2026/11/18-00:16:45.362 9410 Reusing old log C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default\EdgeCoupons/coupons_data.db/000004.log 
+2026/11/18-00:16:45.599 10154 Level-0 table #8: started
+2026/11/18-00:16:45.608 10154 Level-0 table #8: 683444 bytes OK
+2026/11/18-00:16:45.638 10154 Delete type=0 #4

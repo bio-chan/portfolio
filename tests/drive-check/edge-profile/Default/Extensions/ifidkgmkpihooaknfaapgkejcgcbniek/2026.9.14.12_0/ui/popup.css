@@ -1,0 +1,308 @@
+/* popup.css — Ad Blocker Pro toolbar popup (360px, dark emerald glass). */
+
+body {
+   width: 360px;
+   overflow: hidden;
+}
+
+.popup {
+   position: relative;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   padding: 14px;
+   animation: popupIn 0.3s var(--ease) both;
+}
+@keyframes popupIn {
+   from { opacity: 0; transform: translateY(4px); }
+   to { opacity: 1; transform: none; }
+}
+
+/* ---- header ---- */
+.top {
+   display: flex;
+   align-items: center;
+   gap: 9px;
+   padding: 2px 4px;
+}
+.brand-icon { display: block; }
+.brand-name {
+   flex: 1;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 0.01em;
+}
+.icon-btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 32px;
+   height: 32px;
+   color: var(--text-dim);
+   background: transparent;
+   border: none;
+   border-radius: var(--r-sm);
+   cursor: pointer;
+   transition: color 0.2s var(--ease), background 0.2s var(--ease);
+}
+.icon-btn:hover { color: var(--text); background: var(--panel-hover); }
+.icon-btn:hover svg { transform: rotate(45deg); }
+.icon-btn svg { transition: transform 0.35s var(--spring); }
+.icon-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---- hero ---- */
+.hero {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   padding: 20px 18px 22px;
+   text-align: center;
+   transition: border-color 0.3s var(--ease);
+}
+
+.site-chip {
+   display: inline-flex;
+   align-items: center;
+   gap: 7px;
+   max-width: 100%;
+   padding: 6px 13px;
+   background: rgba(0, 0, 0, 0.28);
+   border: 1px solid var(--panel-border);
+   border-radius: var(--r-full);
+   font-size: 12px;
+   color: var(--text-dim);
+}
+.site-chip #siteName {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.dot {
+   flex: none;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: var(--accent);
+   box-shadow: 0 0 8px var(--glow-green);
+   animation: dotPulse 2.4s ease-in-out infinite;
+}
+@keyframes dotPulse {
+   0%, 100% { box-shadow: 0 0 4px var(--glow-green); }
+   50% { box-shadow: 0 0 12px var(--glow-green); }
+}
+
+.status {
+   margin: 2px 0 0;
+   font-size: 21px;
+   font-weight: 800;
+   letter-spacing: -0.01em;
+   background: var(--grad-green);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: none;
+}
+.hint {
+   margin: 0;
+   max-width: 260px;
+   font-size: 12.5px;
+   line-height: 1.5;
+   color: var(--text-dim);
+}
+
+.toggle-row {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 8px;
+   margin-top: 8px;
+}
+.switch-lg { width: 64px; height: 34px; }
+.switch-lg .track::after { width: 26px; height: 26px; top: 3px; left: 3px; }
+.switch-lg input:checked + .track::after { transform: translateX(32px); }
+.toggle-label {
+   font-size: 11.5px;
+   font-weight: 600;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: var(--text-dim);
+}
+
+.manage-allowed { margin-top: 8px; }
+
+/* ---- stat card ---- */
+.stat {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   padding: 13px 16px;
+   border-radius: var(--r-md);
+}
+.stat-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 34px;
+   height: 34px;
+   flex: none;
+   border-radius: var(--r-sm);
+   background: var(--grad-green);
+   color: var(--text-on-accent);
+}
+.stat-label {
+   flex: 1;
+   font-size: 12.5px;
+   font-weight: 600;
+   color: var(--text-dim);
+}
+.stat-value {
+   font-size: 19px;
+   font-weight: 700;
+   color: var(--text);
+   font-variant-numeric: tabular-nums;
+}
+
+/* ---- YouTube fast-forward card ---- */
+.yt-card {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   padding: 13px 16px;
+   border-radius: var(--r-md);
+}
+.yt-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 34px;
+   height: 34px;
+   flex: none;
+   border-radius: var(--r-sm);
+   background: var(--grad-green);
+   color: var(--text-on-accent);
+}
+.yt-copy {
+   flex: 1;
+   min-width: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+}
+.yt-title {
+   font-size: 12.5px;
+   font-weight: 600;
+   color: var(--text);
+}
+.yt-desc {
+   font-size: 11px;
+   line-height: 1.4;
+   color: var(--text-dim);
+}
+
+/* ---- footer ---- */
+.footer-btn { width: 100%; }
+
+/* ================= state variants ================= */
+
+/* paused — the WHOLE popup shifts amber so "not protected" is unmissable */
+body.state-paused .ambient {
+   background: radial-gradient(120% 100% at 80% 0%, #2e2008 0%, #1c1305 45%, #100b03 100%);
+}
+body.state-paused .ambient::before {
+   background: radial-gradient(circle, rgba(251, 191, 36, 0.4), transparent 70%);
+}
+body.state-paused .ambient::after {
+   background: radial-gradient(circle, rgba(245, 158, 11, 0.3), transparent 70%);
+}
+body.state-paused .hero {
+   border-color: rgba(251, 191, 36, 0.42);
+   background: linear-gradient(150deg, rgba(251, 191, 36, 0.12), rgba(251, 191, 36, 0.035));
+}
+body.state-paused .status {
+   background: var(--grad-amber);
+   -webkit-background-clip: text;
+   background-clip: text;
+}
+body.state-paused .hint { color: #e8cf9a; }
+body.state-paused .site-chip { border-color: rgba(251, 191, 36, 0.35); }
+body.state-paused .dot {
+   background: var(--amber);
+   box-shadow: 0 0 8px var(--glow-amber);
+   animation: dotPulseAmber 1.6s ease-in-out infinite;
+}
+@keyframes dotPulseAmber {
+   0%, 100% { box-shadow: 0 0 4px var(--glow-amber); }
+   50% { box-shadow: 0 0 14px var(--glow-amber); }
+}
+body.state-paused .switch .track {
+   background: rgba(251, 191, 36, 0.3);
+   border-color: rgba(251, 191, 36, 0.45);
+   box-shadow: 0 0 16px var(--glow-amber);
+}
+body.state-paused .toggle-label { color: var(--amber); }
+body.state-paused .stat-icon {
+   background: var(--grad-amber);
+   color: var(--text-on-amber);
+}
+body.state-paused .stat { border-color: rgba(251, 191, 36, 0.22); }
+
+/* allowed — calm mint, toggle replaced by manage button */
+body.state-allowed .status {
+   background: none;
+   -webkit-text-fill-color: currentColor;
+   color: var(--mint-pale);
+}
+body.state-allowed .toggle-row { display: none; }
+body.state-allowed .dot { animation: none; }
+
+/* blocked (by the user) — the WHOLE popup shifts red; read-only like allowed */
+body.state-blocked .ambient {
+   background: radial-gradient(120% 100% at 80% 0%, #2e0b0b 0%, #1c0707 45%, #100404 100%);
+}
+body.state-blocked .ambient::before {
+   background: radial-gradient(circle, rgba(248, 113, 113, 0.38), transparent 70%);
+}
+body.state-blocked .ambient::after {
+   background: radial-gradient(circle, rgba(239, 68, 68, 0.28), transparent 70%);
+}
+body.state-blocked .hero {
+   border-color: rgba(248, 113, 113, 0.42);
+   background: linear-gradient(150deg, rgba(248, 113, 113, 0.12), rgba(248, 113, 113, 0.035));
+}
+body.state-blocked .status {
+   background: var(--grad-danger);
+   -webkit-background-clip: text;
+   background-clip: text;
+}
+body.state-blocked .hint { color: #eeb0b0; }
+body.state-blocked .site-chip { border-color: rgba(248, 113, 113, 0.35); }
+body.state-blocked .dot {
+   background: var(--danger);
+   box-shadow: 0 0 8px var(--glow-danger);
+   animation: dotPulseRed 1.6s ease-in-out infinite;
+}
+@keyframes dotPulseRed {
+   0%, 100% { box-shadow: 0 0 4px var(--glow-danger); }
+   50% { box-shadow: 0 0 14px var(--glow-danger); }
+}
+body.state-blocked .toggle-row { display: none; }
+body.state-blocked .stat-icon {
+   background: var(--grad-danger);
+   color: #2a0505;
+}
+body.state-blocked .stat { border-color: rgba(248, 113, 113, 0.22); }
+
+/* restricted — muted; the switch would only confuse (nothing to pause) */
+body.state-restricted .status {
+   background: none;
+   -webkit-text-fill-color: currentColor;
+   color: var(--text-dim);
+}
+body.state-restricted .dot {
+   background: var(--text-muted);
+   box-shadow: none;
+   animation: none;
+}
+body.state-restricted .toggle-row { display: none; }

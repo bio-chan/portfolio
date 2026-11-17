@@ -1,0 +1,298 @@
+﻿/* polish.css — image cropping + layout alignment (loaded last) */
+
+/* ---------- Concept art gallery: full-bleed 4:5 crops ---------- */
+.art-gallery{gap:32px;align-items:start}
+.art-piece .art-view{height:auto;aspect-ratio:4/5;padding:0;background:#17161b;border-radius:8px;box-shadow:0 18px 40px #0000004d}
+.art-piece .art-view img{object-fit:cover;object-position:50% 18%}
+.art-piece:nth-child(4) .art-view img{object-position:50% 40%}
+.art-piece .art-label{margin-top:14px}
+
+/* ---------- 3D / campaign key visuals: no letterbox ---------- */
+.object-case>.art-view{aspect-ratio:16/9}
+.object-case>.art-view img,
+.campaign-feature .art-view img{object-fit:cover;object-position:center}
+.campaign-feature .art-view{padding:0;display:block;aspect-ratio:1024/575;min-height:100%}
+.campaign-feature .art-view img{height:100%}
+
+/* ---------- VTuber standees: equal cropped tiles ---------- */
+.merch-grid{align-items:start}
+.merch-grid .art-view{height:auto;aspect-ratio:1024/575;padding:0;background:#211b2a;border-radius:8px}
+.merch-grid .art-view img{object-fit:cover;object-position:center}
+
+/* ---------- Magazine spreads ---------- */
+.spread-preview img{object-fit:cover;object-position:center;border-radius:2px}
+
+/* ---------- Exhibition: gamescom hero + archive cards ---------- */
+#gamescomMainImg{object-fit:cover!important;object-position:50% 22%}
+#gamescomThumbsContainer img{object-position:50% 40%}
+.exhibition-archive{align-items:stretch}
+.exhibition-archive>div>div:first-child{height:224px!important}
+.exhibition-archive img{width:100%;height:100%;object-fit:cover;object-position:center}
+.exhibition-archive>div:last-child img{object-position:top}
+
+/* ---------- Profile portrait ---------- */
+.portrait-frame img{object-position:50% 20%;border-radius:8px}
+
+/* ---------- Video thumbs ---------- */
+.game-trailer>img,.motion-screen>img{object-fit:cover;object-position:center}
+
+@media(max-width:720px){
+  .art-gallery{gap:24px}
+  .art-piece .art-view{aspect-ratio:4/5}
+  .campaign-feature .art-view{aspect-ratio:1024/575}
+  .merch-grid .art-view{aspect-ratio:1024/575;height:auto}
+  .exhibition-archive>div>div:first-child{height:200px!important}
+}
+
+/* ================= Motion layer (disabled by .quiet-motion / reduced-motion) ================= */
+@keyframes pz-float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-10px) rotate(.6deg)}}
+@keyframes pz-kenburns{0%{transform:scale(1.02) translate(0,0)}100%{transform:scale(1.12) translate(-1.5%,-1.5%)}}
+@keyframes pz-shine{0%{transform:translateX(-130%) skewX(-18deg)}60%,100%{transform:translateX(230%) skewX(-18deg)}}
+@keyframes pz-pop{0%{opacity:0;transform:translateY(40px) scale(.92) rotate(-1.5deg)}60%{opacity:1;transform:translateY(-6px) scale(1.01) rotate(.4deg)}100%{opacity:1;transform:none}}
+@keyframes pz-glow{0%,100%{box-shadow:0 0 0 0 #00f0ff00}50%{box-shadow:0 0 0 6px #00f0ff22}}
+@keyframes pz-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+
+/* Reveal: curtain wipe + settle-in zoom */
+.pz-item{--pz-d:0ms;opacity:0;transform:translateY(40px) scale(.94) rotate(-1deg);clip-path:inset(0 0 100% 0 round 8px);
+  transition:opacity .8s ease var(--pz-d),transform .9s cubic-bezier(.2,.8,.25,1.1) var(--pz-d),clip-path 1s cubic-bezier(.2,.8,.2,1) var(--pz-d)}
+.pz-item.pz-in{opacity:1;transform:none;clip-path:inset(0 0 0 0 round 8px)}
+.pz-item.pz-in img{animation:pz-zoomout 1.3s cubic-bezier(.2,.8,.2,1) var(--pz-d) both}
+@keyframes pz-zoomout{from{scale:1.25}to{scale:1}}
+.art-gallery .art-piece:nth-child(even) .pz-item{transform:translateY(50px) scale(.94) rotate(1deg)}
+.art-gallery .art-piece:nth-child(even) .pz-item.pz-in{transform:none}
+
+/* Hover: tilt (JS vars), lift, shine sweep, caption nudge */
+.pz-tilt{transform-style:preserve-3d;will-change:transform}
+.pz-item.pz-in.pz-tilt{transition:transform .25s ease-out,box-shadow .3s}
+.pz-item.pz-in.pz-tilt:hover{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-8px) scale(1.02);
+  box-shadow:0 30px 60px #00000080,0 0 0 1px #00f0ff55}
+.art-view:hover img,.game-trailer:hover>img,.motion-screen:hover>img{transform:scale(1.08) rotate(.6deg)!important;transition:transform .8s cubic-bezier(.2,.8,.2,1)!important}
+.pz-item:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 35%,#ffffff40 50%,transparent 65%);transform:translateX(-130%) skewX(-18deg)}
+.pz-item:hover:after{animation:pz-shine .9s ease}
+.art-piece:hover .art-label h3{transform:translateX(6px)}
+.art-label h3,.art-label b,.merch-label h3{transition:transform .35s}
+.art-piece:hover .art-label b{transform:translate(4px,-4px) rotate(8deg);color:#00f0ff}
+
+/* Idle life: floating, ken burns, glow pulse */
+.portrait-frame{animation:pz-float 6s ease-in-out infinite}
+.portrait-frame>span{animation:pz-bob 3.2s ease-in-out infinite}
+.character-art img{animation:pz-float 7s ease-in-out infinite}
+.intro-identity img{animation:pz-glow 3s ease-in-out infinite}
+#gamescomMainImg,.game-trailer>img,.motion-screen>img{animation:pz-kenburns 14s ease-in-out infinite alternate}
+.campaign-feature .art-view img,.object-case>.art-view img{animation:pz-kenburns 18s ease-in-out infinite alternate}
+.gamescom-thumb-btn{transition:transform .3s cubic-bezier(.3,1.6,.5,1),border-color .3s}
+.gamescom-thumb-btn:hover{transform:translateY(-6px) scale(1.06) rotate(-1deg)}
+.gamescom-thumb-btn:nth-child(odd):hover{transform:translateY(-6px) scale(1.06) rotate(1deg)}
+.spread-preview button,.exhibition-archive>div{transition:transform .35s cubic-bezier(.3,1.5,.5,1),border-color .3s}
+.spread-preview button:hover{transform:translateY(-6px) rotate(-1.2deg)}
+.spread-preview button:nth-child(even):hover{transform:translateY(-6px) rotate(1.2deg)}
+.exhibition-archive>div:hover{transform:translateY(-10px) rotate(-.8deg)}
+.exhibition-archive>div:nth-child(even):hover{transform:translateY(-10px) rotate(.8deg)}
+.exhibition-archive img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.exhibition-archive>div:hover img{transform:scale(1.12)}
+.book-display>img{animation:pz-float 8s ease-in-out infinite}
+.image-open{transition:opacity .35s,transform .35s cubic-bezier(.3,1.6,.5,1)}
+
+/* Scroll parallax (JS sets --py on art images) */
+.art-piece .art-view img,.merch-grid .art-view img{translate:0 var(--py,0px)}
+
+.quiet-motion .pz-item{opacity:1!important;transform:none!important;clip-path:none!important}
+.quiet-motion .pz-item:after{display:none}
+.quiet-motion .portrait-frame,.quiet-motion .portrait-frame>span,.quiet-motion .character-art img,.quiet-motion .intro-identity img,
+.quiet-motion #gamescomMainImg,.quiet-motion .game-trailer>img,.quiet-motion .motion-screen>img,.quiet-motion .campaign-feature .art-view img,
+.quiet-motion .object-case>.art-view img,.quiet-motion .book-display>img,.quiet-motion .pz-item.pz-in img{animation:none!important;translate:none!important}
+
+/* ================= Persona-style layer: slash wipes, tilted marquee bands, shards, lane ================= */
+@keyframes pz-run-l{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes pz-run-r{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes pz-drift{0%{transform:translate3d(0,0,0) rotate(var(--r,0deg))}50%{transform:translate3d(var(--dx,30px),var(--dy,-40px),0) rotate(calc(var(--r,0deg) + 25deg))}100%{transform:translate3d(0,0,0) rotate(var(--r,0deg))}}
+@keyframes pz-scrollline{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@keyframes pz-glitch{0%,100%{transform:none;filter:none}20%{transform:translate(-3px,1px) skewX(-2deg);filter:drop-shadow(3px 0 #ff2d55) drop-shadow(-3px 0 #38e1ff)}40%{transform:translate(3px,-1px)}60%{transform:translate(-2px,0) skewX(2deg);filter:drop-shadow(-3px 0 #ff2d55) drop-shadow(3px 0 #38e1ff)}80%{transform:translate(1px,1px)}}
+
+/* Snappy diagonal slash wipe (replaces curtain) */
+.pz-item{opacity:1;transform:translateX(-36px) skewX(-5deg);clip-path:polygon(-1% -1%,-1% -1%,-21% 101%,-21% 101%);
+  transition:transform .6s cubic-bezier(.76,0,.3,1) var(--pz-d),clip-path .6s cubic-bezier(.76,0,.3,1) var(--pz-d),box-shadow .3s}
+.pz-item.pz-in{transform:none;clip-path:polygon(-1% -1%,101% -1%,101% 101%,-1% 101%)}
+.pz-item.pz-in.pz-done{clip-path:none}
+.art-gallery .art-piece:nth-child(even) .pz-item{transform:translateX(36px) skewX(5deg);clip-path:polygon(101% -1%,101% -1%,121% 101%,121% 101%)}
+.art-gallery .art-piece:nth-child(even) .pz-item.pz-in{transform:none;clip-path:polygon(-1% -1%,101% -1%,101% 101%,-1% 101%)}
+.art-gallery .art-piece:nth-child(even) .pz-item.pz-in.pz-done{clip-path:none}
+.pz-item.pz-in.pz-tilt{transition:transform .25s ease-out,box-shadow .3s}
+.pz-item.pz-in img{animation:pz-zoomout .9s cubic-bezier(.76,0,.3,1) var(--pz-d) both}
+
+/* Cut-corner frames + glitch on hover */
+.art-piece .art-view,.merch-grid .art-view,.exhibition-archive>div{border-radius:0!important}
+.art-piece .art-view{clip-path:none}
+.art-piece .art-view:hover img,.merch-grid .art-view:hover img{animation:pz-glitch .45s steps(1,end) 1}
+.art-piece:nth-child(odd) .art-view{border-bottom-right-radius:36px!important}
+.art-piece:nth-child(even) .art-view{border-top-left-radius:36px!important}
+
+/* Section titles: slanted slide-in */
+.chapter-head h2{display:block;width:fit-content;position:relative}
+.chapter-head.play-reveal h2{transform:translateX(-70px) skewX(-14deg);opacity:0;transition:transform .55s cubic-bezier(.76,0,.3,1) .1s,opacity .3s .1s}
+.chapter-head.play-reveal.revealed h2{transform:none;opacity:1}
+.chapter-head h2:after{content:"";position:absolute;left:-14px;right:-14px;bottom:-4px;height:10px;background:#ff2bd6;z-index:-1;transform:scaleX(0) skewX(-30deg);transform-origin:left;transition:transform .5s cubic-bezier(.76,0,.3,1) .45s}
+.chapter-head.revealed h2:after{transform:scaleX(1) skewX(-30deg)}
+.chapter-index{transform-origin:left}
+.chapter-head.play-reveal .chapter-index{transform:translateX(-30px);opacity:0;transition:.4s .05s}
+.chapter-head.revealed .chapter-index{transform:none;opacity:1}
+
+/* Tilted marquee bands */
+.pz-bands{position:relative;height:150px;overflow:hidden;background:transparent;pointer-events:none;z-index:3}
+.pz-band{position:absolute;left:-5vw;width:110vw;overflow:hidden;white-space:nowrap;box-shadow:0 8px 24px #00000066}
+.pz-band>div{display:inline-flex;width:max-content;animation:pz-run-l 28s linear infinite}
+.pz-band span{font:italic 800 26px/1 Kanit,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:14px 22px;display:inline-flex;align-items:center;gap:22px}
+.pz-band span:after{content:"\25C6";font-size:14px;opacity:.8}
+.pz-band.a{top:34px;background:#ff2bd6;color:#fff;transform:rotate(-3deg)}
+.pz-band.b{top:70px;background:#0a0a10;color:#fff;border-block:2px solid #fff;transform:rotate(2deg)}
+.pz-band.b>div{animation-name:pz-run-r;animation-duration:34s}
+.pz-bands.one .pz-band.a{top:55px}
+
+/* Image lane (tilted, endless) */
+.pz-lane{position:relative;overflow:hidden;padding:46px 0;background:linear-gradient(180deg,#0b0b12,#12101a);transform:skewY(-2deg);margin:40px 0}
+.pz-lane>div{display:flex;gap:18px;width:max-content;animation:pz-run-l 60s linear infinite;transform:skewY(2deg)}
+.pz-lane:hover>div{animation-play-state:paused}
+.pz-lane figure{margin:0;width:260px;aspect-ratio:16/10;overflow:hidden;flex:none;transform:skewX(-9deg);border:2px solid #ffffff22;transition:transform .3s cubic-bezier(.3,1.6,.5,1),border-color .3s,box-shadow .3s}
+.pz-lane figure:hover{transform:skewX(-9deg) translateY(-10px) scale(1.06);border-color:#ff2bd6;box-shadow:0 18px 30px #000a}
+.pz-lane img{width:130%;height:100%;object-fit:cover;margin-left:-15%;transform:skewX(9deg);transition:transform .6s}
+.pz-lane figure:hover img{transform:skewX(9deg) scale(1.12)}
+
+/* Shards */
+.pz-shard{position:absolute;pointer-events:none;z-index:0;opacity:.3;animation:pz-drift var(--t,12s) ease-in-out infinite;animation-delay:var(--dl,0s);will-change:transform;translate:0 var(--sy,0px)}
+.pz-shard.s1{clip-path:polygon(0 100%,40% 0,100% 55%,55% 100%)}
+.pz-shard.s2{clip-path:polygon(50% 0,100% 100%,0 80%)}
+.pz-shard.s3{clip-path:polygon(0 30%,100% 0,70% 100%)}
+.studio-hero,.contact-section{position:relative}
+
+/* Hero scroll indicator */
+.pz-scroll{position:absolute;left:7%;bottom:18px;display:flex;flex-direction:column;align-items:center;gap:8px;font:700 10px monospace;letter-spacing:.3em;color:#fff;z-index:5;pointer-events:none}
+.pz-scroll i{display:block;width:2px;height:54px;background:#ff2bd6;animation:pz-scrollline 2.2s cubic-bezier(.76,0,.3,1) infinite}
+
+.quiet-motion .pz-item,.quiet-motion .art-gallery .art-piece:nth-child(even) .pz-item{clip-path:none!important;transform:none!important}
+.quiet-motion .chapter-head.play-reveal h2,.quiet-motion .chapter-head.play-reveal .chapter-index{transform:none!important;opacity:1!important}
+.quiet-motion .chapter-head h2:after{transform:scaleX(1) skewX(-30deg)!important}
+.quiet-motion .pz-band>div,.quiet-motion .pz-lane>div,.quiet-motion .pz-shard,.quiet-motion .pz-scroll i{animation:none!important}
+.quiet-motion .art-view:hover img{animation:none!important}
+@media(max-width:720px){.pz-band span{font-size:18px;padding:10px 16px}.pz-bands{height:120px}.pz-band.a{top:24px}.pz-band.b{top:56px}.pz-lane figure{width:190px}}
+
+
+
+/* ================= NEON GAME-DEV THEME ================= */
+:root{--accent:#00f0ff;--signal:#b6ff3c;--n-cyan:#00f0ff;--n-mag:#ff2bd6;--n-lime:#b6ff3c;--n-vio:#8a5cff}
+@keyframes nz-border{0%,100%{box-shadow:0 0 0 1px #00f0ff,0 0 14px #00f0ff88,0 0 38px #00f0ff33}33%{box-shadow:0 0 0 1px #ff2bd6,0 0 14px #ff2bd688,0 0 38px #ff2bd633}66%{box-shadow:0 0 0 1px #b6ff3c,0 0 14px #b6ff3c77,0 0 38px #b6ff3c22}}
+@keyframes nz-flicker{0%,18%,22%,62%,64%,100%{text-shadow:0 0 6px #00f0ffcc,0 0 22px #00f0ff88,0 0 46px #ff2bd677}20%,63%{text-shadow:none}}
+@keyframes nz-hue{to{filter:hue-rotate(360deg)}}
+@keyframes nz-grid{from{background-position:0 0}to{background-position:0 64px}}
+@keyframes nz-orb{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(60px,-40px) scale(1.2)}}
+@keyframes nz-bubble{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes nz-scan{from{background-position:0 0}to{background-position:0 8px}}
+
+body{background-image:radial-gradient(circle at 15% 10%,#ff2bd61f,transparent 40%),radial-gradient(circle at 90% 30%,#00f0ff1c,transparent 40%)}
+.chapter-head h2,.studio-hero h1{text-shadow:0 0 8px #00f0ff99,0 0 28px #00f0ff55,0 0 60px #ff2bd644;animation:nz-flicker 6s infinite}
+.chapter-head h2 span,.studio-hero h1 em,.studio-hero h1 span{text-shadow:0 0 12px currentColor}
+.chapter-index,.text-purple-300,.text-purple-400,.project-kicker{color:#00f0ff!important;text-shadow:0 0 10px #00f0ffaa}
+.chapter-index:before,.chapter-head>div>span:before{background:#ff2bd6!important;box-shadow:0 0 12px #ff2bd6}
+.studio-hero{background:radial-gradient(ellipse at 50% 120%,#ff2bd633,transparent 60%),#05030d!important}
+.studio-hero [class*="text-"] em,.studio-hero h1 b{color:#ff2bd6!important}
+a.btn,.project-tags span,.exhibition-main .grid button{box-shadow:0 0 0 1px #00f0ff55}
+.project-tags span{border-color:#00f0ff66!important;color:#a8fbff!important;text-shadow:0 0 8px #00f0ff66;transition:.25s}
+.project-tags span:hover{background:#00f0ff22;box-shadow:0 0 16px #00f0ff;transform:translateY(-3px) skewX(-6deg)}
+.art-view,.exhibition-archive>div,.object-case,.exhibition-main,.game-trailer,.motion-screen,.spread-preview button{animation:nz-border 6s linear infinite}
+.art-piece:nth-child(2) .art-view,.merch-grid>*:nth-child(2) .art-view{animation-delay:-2s}
+.art-piece:nth-child(3) .art-view{animation-delay:-4s}
+.pz-lane figure{border-color:#00f0ff88;box-shadow:0 0 18px #00f0ff44}
+.pz-lane figure:nth-child(3n){border-color:#ff2bd6aa;box-shadow:0 0 18px #ff2bd644}
+.pz-lane figure:nth-child(3n+1){border-color:#b6ff3caa;box-shadow:0 0 18px #b6ff3c33}
+.pz-band.a{background:linear-gradient(90deg,#ff2bd6,#8a5cff,#00f0ff);color:#05030d;box-shadow:0 0 30px #ff2bd699}
+.pz-band.b{background:#05030d;border-color:#00f0ff;color:#00f0ff;text-shadow:0 0 10px #00f0ff;box-shadow:0 0 26px #00f0ff66}
+.pz-shard{opacity:.5;filter:drop-shadow(0 0 10px currentColor)}
+.pz-scroll i{box-shadow:0 0 12px #ff2bd6}
+.pz-scroll{color:#00f0ff;text-shadow:0 0 8px #00f0ff}
+.chapter-head h2:after{background:linear-gradient(90deg,#ff2bd6,#00f0ff);box-shadow:0 0 16px #ff2bd6}
+.gamescom-thumb-btn:hover{box-shadow:0 0 22px #00f0ff}
+header nav a:hover{color:#00f0ff!important;text-shadow:0 0 10px #00f0ff}
+
+/* Synthwave perspective grid (hero + contact) */
+.nz-grid{position:absolute;left:-20%;right:-20%;bottom:0;height:42%;z-index:0;pointer-events:none;perspective:420px;overflow:hidden;-webkit-mask-image:linear-gradient(to top,#000 25%,transparent);mask-image:linear-gradient(to top,#000 25%,transparent)}
+.nz-grid:before{content:"";position:absolute;inset:-50% 0 0;transform:rotateX(64deg);transform-origin:50% 100%;
+  background-image:linear-gradient(#ff2bd6cc 2px,transparent 2px),linear-gradient(90deg,#00f0ffcc 2px,transparent 2px);background-size:64px 64px;animation:nz-grid 1.4s linear infinite;filter:drop-shadow(0 0 6px #ff2bd6)}
+.nz-orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.35;pointer-events:none;animation:nz-orb 14s ease-in-out infinite}
+.nz-scan{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.07;background:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 4px);animation:nz-scan .6s linear infinite}
+
+/* 3D crystal cat mascot */
+.nz-cat{position:absolute;z-index:6;width:300px;height:300px;cursor:pointer;touch-action:manipulation}
+.nz-cat canvas{width:100%;height:100%;display:block;filter:drop-shadow(0 0 16px #00f0ffaa) drop-shadow(0 0 40px #ff2bd666)}
+.nz-cat.hero{left:calc(50% - 190px);bottom:60px}
+.nz-cat.about{right:4%;bottom:30px;width:260px;height:260px}
+.nz-bubble{position:absolute;left:62%;top:2%;padding:8px 14px;font:700 12px monospace;letter-spacing:.12em;color:#05030d;background:#b6ff3c;border-radius:12px 12px 12px 0;box-shadow:0 0 20px #b6ff3c;animation:nz-bubble 2.4s ease-in-out infinite;pointer-events:none;white-space:nowrap;transition:transform .2s,opacity .2s}
+.nz-bubble.pop{transform:scale(1.25) rotate(-4deg)}
+@media(max-width:900px){.nz-cat.hero{left:auto;right:6px;bottom:90px;width:190px;height:190px}.nz-cat.about{width:190px;height:190px;right:0}}
+
+.quiet-motion .chapter-head h2,.quiet-motion .studio-hero h1,.quiet-motion .art-view,.quiet-motion .exhibition-archive>div,.quiet-motion .object-case,.quiet-motion .exhibition-main,.quiet-motion .game-trailer,.quiet-motion .motion-screen,.quiet-motion .nz-grid:before,.quiet-motion .nz-orb,.quiet-motion .nz-scan,.quiet-motion .nz-bubble{animation:none!important}
+
+/* ================= Clean marquee (replaces tilted crossing bands) ================= */
+.pz-bands{display:none!important}
+@keyframes mq-spin{to{transform:rotate(360deg)}}
+@keyframes mq-sheen{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.mq{position:relative;overflow:hidden;padding:30px 0;border-block:1px solid #ffffff12;background:#07060d;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mq-track{display:flex;align-items:center;width:max-content;will-change:transform}
+.mq-w{font:700 clamp(34px,5.4vw,78px)/1 Kanit,sans-serif;letter-spacing:-.01em;text-transform:uppercase;padding:0 .35em;white-space:nowrap;
+  background:linear-gradient(90deg,#00f0ff,#ff2bd6,#b6ff3c,#00f0ff);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:mq-sheen 6s linear infinite;filter:drop-shadow(0 0 14px #00f0ff55);transition:filter .3s}
+.mq-w.o{background:none;color:transparent;-webkit-text-stroke:1.5px #ffffff9c;filter:none}
+.mq-star{flex:none;width:22px;height:22px;margin:0 .6em;background:#ff2bd6;
+  clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);box-shadow:0 0 18px #ff2bd6;animation:mq-spin 4s linear infinite}
+.mq-star:nth-of-type(3n){background:#00f0ff}
+.mq-star:nth-of-type(3n+1){background:#b6ff3c}
+.mq:hover .mq-w.o{-webkit-text-stroke-color:#00f0ff}
+
+/* Image lane: straight, clean cards */
+.pz-lane{transform:none!important;margin:24px 0;padding:34px 0;background:none;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.pz-lane>.mq-track{gap:20px;animation:none!important}
+.pz-lane figure{transform:none!important;border-radius:14px;border:1px solid #ffffff1f!important;box-shadow:0 10px 30px #0008!important;width:280px;
+  transition:translate .45s cubic-bezier(.2,.8,.2,1),scale .45s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s}
+.pz-lane figure:hover{translate:0 -10px;scale:1.05;border-color:#00f0ff!important;box-shadow:0 0 0 1px #00f0ff,0 0 30px #00f0ff66,0 20px 40px #000a!important}
+.pz-lane img{width:100%!important;margin:0!important;transform:none!important;transition:scale .7s cubic-bezier(.2,.8,.2,1)}
+.pz-lane figure:hover img{scale:1.1}
+.quiet-motion .mq-w,.quiet-motion .mq-star{animation:none!important}
+@media(max-width:720px){.mq{padding:20px 0}.mq-star{width:14px;height:14px}.pz-lane figure{width:200px}}
+
+.campaign-info .project-tags span{color:#4b2a63!important;border-color:#4b2a6355!important;text-shadow:none!important;box-shadow:none!important}
+.campaign-info .project-kicker{color:#8a3fb8!important;text-shadow:none!important}
+
+/* ---- Event Photo Log (Google Drive imports) ---- */
+.evlog{margin-top:56px;padding:28px;border-radius:18px;background:linear-gradient(160deg,#0d0a1fcc,#07060fcc);border:1px solid #ffffff17;
+  box-shadow:0 0 0 1px #00f0ff14,0 30px 60px #0008;position:relative;overflow:hidden}
+.evlog::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;
+  background:linear-gradient(120deg,var(--n-cyan),transparent 30%,transparent 70%,var(--n-mag));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.55}
+.evlog-head{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between}
+.evlog-kicker{font:600 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;color:var(--n-lime);text-shadow:0 0 12px #b6ff3c66}
+.evlog-head h3{margin-top:8px;font-size:clamp(22px,3vw,32px);font-weight:800;color:#fff}
+.evlog-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.evlog-tabs button{font:600 12px/1 ui-monospace,Menlo,monospace;padding:10px 14px;border-radius:999px;color:#cbd5e1;background:#ffffff0d;border:1px solid #ffffff1f;
+  transition:color .25s,background .25s,border-color .25s,box-shadow .25s,translate .25s}
+.evlog-tabs button:hover{color:#fff;border-color:#00f0ff88;translate:0 -2px}
+.evlog-tabs button[aria-selected="true"]{color:#05040c;background:var(--n-cyan);border-color:var(--n-cyan);box-shadow:0 0 18px #00f0ff88}
+.evlog-desc{margin:18px 0 20px;max-width:780px;font-size:14px;line-height:1.7;color:#a9b2c7}
+.evlog-desc b{display:block;color:#fff;font-size:16px;margin-bottom:2px}
+.evlog-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:12px}
+.evlog-item{position:relative;overflow:hidden;border-radius:12px;border:1px solid #ffffff1a;background:#000;padding:0;cursor:zoom-in;
+  transition:border-color .3s,box-shadow .3s,translate .35s cubic-bezier(.2,.8,.2,1)}
+.evlog-item.big{grid-column:span 2;grid-row:span 2}
+.evlog-item img{width:100%;height:100%;object-fit:cover;transition:scale .8s cubic-bezier(.2,.8,.2,1),filter .4s}
+.evlog-item span{position:absolute;left:10px;bottom:10px;font:700 11px/1 ui-monospace,Menlo,monospace;color:#fff;padding:5px 8px;border-radius:6px;background:#000a;border:1px solid #ffffff33}
+.evlog-item:hover{border-color:var(--n-mag);box-shadow:0 0 0 1px var(--n-mag),0 0 26px #ff2bd666;translate:0 -4px}
+.evlog-item:hover img{scale:1.08;filter:saturate(1.15)}
+.evlog-grid.swap .evlog-item{animation:evIn .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*70ms)}
+@keyframes evIn{from{opacity:0;clip-path:polygon(0 0,0 0,0 100%,0 100%);translate:0 18px}to{opacity:1;clip-path:polygon(0 0,100% 0,100% 100%,0 100%);translate:0 0}}
+.quiet-motion .evlog-grid.swap .evlog-item{animation:none}
+.evm-nav{position:absolute;top:50%;translate:0 -50%;width:44px;height:44px;border-radius:50%;background:#000b;border:1px solid #ffffff40;color:#fff;font-size:24px;line-height:1;
+  display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s,box-shadow .2s}
+.evm-nav.hidden{display:none}
+.evm-nav:hover{background:#00f0ff22;border-color:var(--n-cyan);box-shadow:0 0 16px #00f0ff88}
+.evm-prev{left:12px}.evm-next{right:12px}
+@media(max-width:900px){.evlog-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}}
+@media(max-width:520px){.evlog{padding:18px;margin-top:40px}.evlog-grid{grid-auto-rows:120px;gap:8px}.evlog-tabs button{padding:9px 11px;font-size:11px}}

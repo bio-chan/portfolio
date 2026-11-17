@@ -1,0 +1,232 @@
+{
+   "appDesc": {
+      "message": "Vi stopper irriterende annoncer, popups, trackere på populære websteder og springer YouTube-annoncer over."
+   },
+   "appName": {
+      "message": "Ad Blocker Pro - Stoppe invasive annoncer"
+   },
+   "uiAboutDesc": {
+      "message": "Blokerer invasive annoncer, popups og trackere, med kontrol pr. websted, når du har brug for det."
+   },
+   "uiAddAllowed": {
+      "message": "Tillad"
+   },
+   "uiAddBlocked": {
+      "message": "Bloker"
+   },
+   "uiAddPaused": {
+      "message": "Sæt på pause"
+   },
+   "uiAddPlaceholder": {
+      "message": "eksempel.dk — eller indsæt en fuld URL"
+   },
+   "uiAllowedDesc": {
+      "message": "Ad Blocker Pro griber slet ikke ind på disse websteder — dér blokeres hverken annoncer eller trackere."
+   },
+   "uiAllowedEmpty": {
+      "message": "Ingen tilladte websteder endnu."
+   },
+   "uiAllowedNote": {
+      "message": "Når du fjerner et websted, ophører tilladelsen straks på denne enhed; den delte filteropdatering fuldfører processen inden for cirka 12 timer."
+   },
+   "uiAllowedTitle": {
+      "message": "Tilladte websteder"
+   },
+   "uiBlockedDesc": {
+      "message": "Disse websteder stoppes helt — selve siden indlæses ikke, ikke kun dens annoncer."
+   },
+   "uiBlockedEmpty": {
+      "message": "Ingen blokerede websteder endnu."
+   },
+   "uiBlockedTitle": {
+      "message": "Blokerede websteder"
+   },
+   "uiErrChildConflict": {
+      "message": "Dette ville tilsidesætte mere specifikke websteder på en anden liste — fjern disse poster først."
+   },
+   "uiErrConflictAllowed": {
+      "message": "Dette websted er på din tilladelsesliste — fjern det dér først."
+   },
+   "uiErrConflictBlocked": {
+      "message": "Dette websted er på din blokeringsliste — fjern det dér først."
+   },
+   "uiErrConflictPaused": {
+      "message": "Dette websted er på pause — fjern det først fra de pausede websteder."
+   },
+   "uiErrDup": {
+      "message": "Dette websted er allerede dækket af listen."
+   },
+   "uiErrInvalid": {
+      "message": "Det ligner ikke en webstedsadresse."
+   },
+   "uiFeaturesDesc": {
+      "message": "Valgfrie ekstrafunktioner — slå dem til eller fra når som helst."
+   },
+   "uiFeaturesTitle": {
+      "message": "Funktioner"
+   },
+   "uiObAutoClose": {
+      "message": "Denne fane lukker om $SECONDS$ s",
+      "placeholders": {
+         "seconds": {
+            "content": "$1"
+         }
+      }
+   },
+   "uiObExtensionsMenu": {
+      "message": "Udvidelser"
+   },
+   "uiObGotIt": {
+      "message": "Forstået — lad os browse"
+   },
+   "uiObPageTitle": {
+      "message": "Velkommen til Ad Blocker Pro"
+   },
+   "uiObPinHint": {
+      "message": "Klik på puslespilsbrikken heroppe for at fastgøre"
+   },
+   "uiObSubtitle": {
+      "message": "Ad Blocker Pro er slået til og blokerer allerede annoncer og trackere. To hurtige tips, før du går videre:"
+   },
+   "uiObTip1Desc": {
+      "message": "Klik på puslespilsbrikken i værktøjslinjen og derefter på nålen ved siden af Ad Blocker Pro. Så er dit skjold altid ét klik væk."
+   },
+   "uiObTip1Title": {
+      "message": "Fastgør den til kontrol med ét klik"
+   },
+   "uiObTip2Desc": {
+      "message": "Hvis et websted driller, så åbn popuppen og skub kontakten — blokeringen sættes kun på pause for det websted, indtil du skubber den tilbage."
+   },
+   "uiObTip2Title": {
+      "message": "Sæt på pause på ethvert websted"
+   },
+   "uiObTitle": {
+      "message": "Du er beskyttet"
+   },
+   "uiOpenSettings": {
+      "message": "Indstillinger"
+   },
+   "uiOptionsPageTitle": {
+      "message": "Ad Blocker Pro — Indstillinger"
+   },
+   "uiOptionsSubtitle": {
+      "message": "Indstillinger og webstedslister"
+   },
+   "uiPausedDesc": {
+      "message": "Blokeringen er slået fra på disse websteder — som regel via pauseknappen i popuppen. Pauser gælder kun på denne enhed."
+   },
+   "uiPausedEmpty": {
+      "message": "Intet er på pause."
+   },
+   "uiPausedTitle": {
+      "message": "Pausede websteder"
+   },
+   "uiPopupBrowserPage": {
+      "message": "Browserside"
+   },
+   "uiPopupHintActive": {
+      "message": "Annoncer og trackere bliver blokeret på dette websted."
+   },
+   "uiPopupHintAllowed": {
+      "message": "Dette websted er på din tilladelsesliste, så Ad Blocker Pro griber ikke ind her."
+   },
+   "uiPopupHintBlocked": {
+      "message": "Du har blokeret dette websted helt — det indlæses slet ikke. Administrer det i indstillingerne."
+   },
+   "uiPopupHintPaused": {
+      "message": "Blokeringen er på pause her, så annoncer kan blive vist. Skub kontakten for at genoptage."
+   },
+   "uiPopupHintRestricted": {
+      "message": "Browsersider og Web Store kan ikke filtreres."
+   },
+   "uiPopupManageAllowed": {
+      "message": "Administrer tilladte websteder"
+   },
+   "uiPopupManageBlocked": {
+      "message": "Administrer blokerede websteder"
+   },
+   "uiPopupSettings": {
+      "message": "Administrer websteder og indstillinger"
+   },
+   "uiPopupStatLabel": {
+      "message": "Beskyttede sider"
+   },
+   "uiPopupStatusActive": {
+      "message": "Beskyttelse aktiv"
+   },
+   "uiPopupStatusAllowed": {
+      "message": "Altid tilladt"
+   },
+   "uiPopupStatusBlocked": {
+      "message": "Blokeret af dig"
+   },
+   "uiPopupStatusPaused": {
+      "message": "På pause på dette websted"
+   },
+   "uiPopupStatusRestricted": {
+      "message": "Intet at blokere her"
+   },
+   "uiPopupToggleAria": {
+      "message": "Sæt blokering på pause eller genoptag den på dette websted"
+   },
+   "uiPopupToggleOff": {
+      "message": "Blokering fra"
+   },
+   "uiPopupToggleOn": {
+      "message": "Blokering til"
+   },
+   "uiRemove": {
+      "message": "Fjern"
+   },
+   "uiResetBtn": {
+      "message": "Gendan standarder"
+   },
+   "uiResetConfirmLabel": {
+      "message": "Ryd alle tre lister?"
+   },
+   "uiResetDesc": {
+      "message": "Rydder dine lister over tilladte, blokerede og pausede websteder. Filterdata påvirkes ikke."
+   },
+   "uiResetNo": {
+      "message": "Annuller"
+   },
+   "uiResetTitle": {
+      "message": "Gendan standarder"
+   },
+   "uiResetYes": {
+      "message": "Ja, ryd dem"
+   },
+   "uiStatExplainer": {
+      "message": "Tæller hvert sidebesøg, hvor blokeringen var aktiv — beskyttede sider, ikke enkelte annoncer."
+   },
+   "uiTabAbout": {
+      "message": "Om"
+   },
+   "uiTabAllowed": {
+      "message": "Tilladte websteder"
+   },
+   "uiTabBlocked": {
+      "message": "Blokerede websteder"
+   },
+   "uiTabFeatures": {
+      "message": "Funktioner"
+   },
+   "uiTabPaused": {
+      "message": "Pausede websteder"
+   },
+   "uiTabsAria": {
+      "message": "Indstillingssektioner"
+   },
+   "uiYtPopupDesc": {
+      "message": "Spol videoreklamer frem, der slipper igennem"
+   },
+   "uiYtSettingsDesc": {
+      "message": "Nogle YouTube-videoreklamer er indbygget i selve videostrømmen og kan ikke filtreres fra. Når dette er slået til, spoles de frem til slutningen, så snart de starter. Gælder kun på youtube.com."
+   },
+   "uiYtTitle": {
+      "message": "YouTube-reklamer"
+   },
+   "uiYtToggleAria": {
+      "message": "Slå fremspoling af YouTube-videoreklamer til eller fra"
+   }
+}

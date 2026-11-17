@@ -1,0 +1,6 @@
+2026/11/17-23:58:07.221 f56c Reusing MANIFEST C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/11/17-23:58:07.224 f56c Recovering log #7
+2026/11/17-23:58:07.225 f56c Reusing old log C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default\EdgeCoupons/coupons_data.db/000007.log 
+2026/11/17-23:58:07.301 544c Level-0 table #11: started
+2026/11/17-23:58:07.315 544c Level-0 table #11: 683444 bytes OK
+2026/11/17-23:58:07.323 544c Delete type=0 #7

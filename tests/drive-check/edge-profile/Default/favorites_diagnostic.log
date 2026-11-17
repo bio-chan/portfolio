@@ -1,0 +1,46 @@
+2026-11-17 16:51:17.376: [INFO] CurrentProfilePath: C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default
+2026-11-17 16:51:17.376: [INFO] Profiles total count: 1
+2026-11-17 16:51:17.376: [INFO] Profile: name=Profile 1 path=C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default lastActive=null
+2026-11-17 16:51:17.376: [INFO] LastUsedProfileDir: C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default
+2026-11-17 16:51:17.376: [INFO] VisibilityChanged: 0
+2026-11-17 16:51:17.454: [INFO] OnDoneLoading sync enabled: 0
+2026-11-17 16:51:17.454: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-17 16:51:17.454: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-17 16:51:17.454: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-17 16:51:17.538: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-17 16:51:21.364: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-17 16:51:21.368: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-17 16:51:21.372: [INFO] Primary account changed.
+2026-11-17 16:51:21.372: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-17 16:51:21.390: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-17 16:51:28.427: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 16:51:28.433: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 16:51:28.433: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 16:51:28.435: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 16:51:28.437: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 16:51:28.459: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 16:51:28.459: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 16:51:28.460: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 16:51:29.100: [INFO] Sync initialization duration: 7425ms
+2026-11-17 16:52:46.006: [INFO] CurrentProfilePath: C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default
+2026-11-17 16:52:46.006: [INFO] Profiles total count: 1
+2026-11-17 16:52:46.006: [INFO] Profile: name=Personal path=C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default lastActive=2026-11-17T16:51:17.412Z
+2026-11-17 16:52:46.006: [INFO] LastUsedProfileDir: C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default
+2026-11-17 16:52:46.006: [INFO] MostRecentlyActiveProfile: name=Personal path=C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default lastActive=2026-11-17T16:51:17.412Z
+2026-11-17 16:52:46.006: [INFO] VisibilityChanged: 0
+2026-11-17 16:52:46.063: [INFO] OnDoneLoading sync enabled: 1
+2026-11-17 16:52:46.063: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-17 16:52:46.063: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-17 16:52:46.063: [INFO] BookmarksSnapshot Startup total=8 bar=8 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-17 16:52:46.308: [INFO] Sync initialization duration: 245ms
+2026-11-17 16:57:58.836: [INFO] CurrentProfilePath: C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default
+2026-11-17 16:57:58.836: [INFO] Profiles total count: 1
+2026-11-17 16:57:58.836: [INFO] Profile: name=Personal path=C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default lastActive=2026-11-17T16:52:46.035Z
+2026-11-17 16:57:58.836: [INFO] LastUsedProfileDir: C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default
+2026-11-17 16:57:58.836: [INFO] MostRecentlyActiveProfile: name=Personal path=C:\Users\Bio\Desktop\portfolio\tests\drive-check\edge-profile\Default lastActive=2026-11-17T16:52:46.035Z
+2026-11-17 16:57:58.836: [INFO] VisibilityChanged: 0
+2026-11-17 16:57:58.906: [INFO] OnDoneLoading sync enabled: 1
+2026-11-17 16:57:58.906: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-17 16:57:58.906: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-17 16:57:58.906: [INFO] BookmarksSnapshot Startup total=8 bar=8 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-17 16:57:59.087: [INFO] Sync initialization duration: 181ms

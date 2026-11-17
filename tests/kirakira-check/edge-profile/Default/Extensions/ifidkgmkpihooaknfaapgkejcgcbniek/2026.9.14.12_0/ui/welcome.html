@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title data-i18n="uiObPageTitle">Welcome to Ad Blocker Pro</title>
+   <link rel="stylesheet" href="shared.css">
+   <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+   <div class="ambient"></div>
+
+   <!-- fixed hint pointing at the real toolbar -->
+   <div class="pin-hint" aria-hidden="true">
+      <svg class="pin-hint-arrow" width="46" height="46" viewBox="0 0 48 48" fill="none"
+         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+         <path d="M8 40 C 18 34, 30 24, 38 12"></path>
+         <path d="M28 12 L 38 12 L 38 22"></path>
+      </svg>
+      <span class="pin-hint-text" data-i18n="uiObPinHint">Click the puzzle piece up here to pin</span>
+   </div>
+
+   <main class="ob">
+      <header class="ob-head">
+         <img class="ob-icon" src="../128.png" alt="" width="84" height="84">
+         <h1 data-i18n="uiObTitle">You're protected</h1>
+         <p data-i18n="uiObSubtitle">Ad Blocker Pro is on and already blocking ads and trackers. Two quick tips before you go:</p>
+      </header>
+
+      <div class="tips">
+         <!-- ============ tip 1: pin ============ -->
+         <section class="card tip">
+            <div class="demo demo-pin" aria-hidden="true">
+               <div class="mock-browser">
+                  <div class="mock-toolbar">
+                     <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+                     <span class="mock-url">example.com</span>
+                     <span class="mock-puzzle">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4a2 2 0 0 0-2 2v3.8h1.5a2.7 2.7 0 0 1 0 5.4H2V20a2 2 0 0 0 2 2h3.8v-1.5a2.7 2.7 0 0 1 5.4 0V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z"/>
+                        </svg>
+                        <span class="mock-ripple"></span>
+                     </span>
+                  </div>
+                  <div class="mock-dropdown">
+                     <div class="mock-dropdown-title" data-i18n="uiObExtensionsMenu">Extensions</div>
+                     <div class="mock-ext-row">
+                        <img src="../icons/16.png" alt="" width="16" height="16">
+                        <span class="mock-ext-name">Ad Blocker Pro</span>
+                        <span class="mock-pin">
+                           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M12 17v5"></path>
+                              <path d="M9 10.8 7 13h10l-2-2.2V5l1-2H8l1 2z"></path>
+                           </svg>
+                           <span class="mock-ripple"></span>
+                        </span>
+                     </div>
+                  </div>
+                  <div class="mock-cursor mock-cursor-pin">
+                     <svg width="16" height="16" viewBox="0 0 24 24" fill="#ecf6ee" stroke="#06231a" stroke-width="1.5">
+                        <path d="M5 3l14 8-6.5 1.5L9 19z"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="tip-copy">
+               <span class="tip-num">1</span>
+               <h2 data-i18n="uiObTip1Title">Pin it for one-click control</h2>
+               <p data-i18n="uiObTip1Desc">Click the puzzle piece in your toolbar, then the pin next to Ad Blocker Pro. Your shield stays one click away.</p>
+            </div>
+         </section>
+
+         <!-- ============ tip 2: pause ============ -->
+         <section class="card tip">
+            <div class="demo demo-pause" aria-hidden="true">
+               <div class="mock-popup">
+                  <div class="pm-chip">
+                     <span class="pm-dot"></span>
+                     <span class="mono">example.com</span>
+                  </div>
+                  <div class="pm-status">
+                     <span class="pm-status-on" data-i18n="uiPopupStatusActive">Protection active</span>
+                     <span class="pm-status-off" data-i18n="uiPopupStatusPaused">Paused on this site</span>
+                  </div>
+                  <div class="pm-switch"><span class="pm-knob"></span></div>
+                  <div class="mock-cursor mock-cursor-pause">
+                     <svg width="16" height="16" viewBox="0 0 24 24" fill="#ecf6ee" stroke="#06231a" stroke-width="1.5">
+                        <path d="M5 3l14 8-6.5 1.5L9 19z"></path>
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="tip-copy">
+               <span class="tip-num">2</span>
+               <h2 data-i18n="uiObTip2Title">Pause on any site</h2>
+               <p data-i18n="uiObTip2Desc">If a site misbehaves, open the popup and flip the switch — blocking pauses for that site only, until you flip it back.</p>
+            </div>
+         </section>
+      </div>
+
+      <footer class="ob-foot">
+         <button id="closeBtn" class="btn btn-primary ob-cta" data-i18n="uiObGotIt">Got it — let's browse</button>
+         <div class="countdown" id="countdownWrap">
+            <span id="countdownText">This tab closes in 12s</span>
+            <div class="countdown-bar"><div class="countdown-fill" id="countdownFill"></div></div>
+         </div>
+      </footer>
+   </main>
+
+   <script src="shared.js"></script>
+   <script src="welcome.js"></script>
+</body>
+</html>

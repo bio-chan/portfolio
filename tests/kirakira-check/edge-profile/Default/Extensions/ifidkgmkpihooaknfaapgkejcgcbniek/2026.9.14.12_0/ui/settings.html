@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title data-i18n="uiOptionsPageTitle">Ad Blocker Pro — Settings</title>
+   <link rel="stylesheet" href="shared.css">
+   <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+   <div class="ambient"></div>
+
+   <!-- Pure-CSS tabs: hidden radios + label pills; panels toggle via :checked. -->
+   <input type="radio" name="tab" id="tab-allowed" class="tab-radio" checked>
+   <input type="radio" name="tab" id="tab-blocked" class="tab-radio">
+   <input type="radio" name="tab" id="tab-paused" class="tab-radio">
+   <input type="radio" name="tab" id="tab-features" class="tab-radio">
+   <input type="radio" name="tab" id="tab-about" class="tab-radio">
+
+   <div class="page">
+      <header class="topbar">
+         <img src="../icons/48.png" alt="" width="40" height="40" class="topbar-icon">
+         <div class="topbar-titles">
+            <h1>Ad Blocker Pro</h1>
+            <p data-i18n="uiOptionsSubtitle">Settings &amp; site lists</p>
+         </div>
+         <span class="version-pill mono" id="versionPill">v</span>
+      </header>
+
+      <nav class="tabs" aria-label="Settings sections" data-i18n-aria="uiTabsAria">
+         <label for="tab-allowed" class="tab tab-green" data-i18n="uiTabAllowed">Allowed sites</label>
+         <label for="tab-blocked" class="tab tab-red" data-i18n="uiTabBlocked">Blocked sites</label>
+         <label for="tab-paused" class="tab tab-amber" data-i18n="uiTabPaused">Paused sites</label>
+         <label for="tab-features" class="tab" data-i18n="uiTabFeatures">Features</label>
+         <label for="tab-about" class="tab" data-i18n="uiTabAbout">About</label>
+      </nav>
+
+      <!-- =============== Allowed =============== -->
+      <section class="panel" id="panel-allowed">
+         <div class="panel-head">
+            <h2 data-i18n="uiAllowedTitle">Allowed sites</h2>
+            <p data-i18n="uiAllowedDesc">Ad Blocker Pro stands down completely on these sites — no ads or trackers are blocked there.</p>
+         </div>
+         <form class="add-row" id="form-allowed" novalidate>
+            <input type="text" class="field" id="input-allowed" autocomplete="off" spellcheck="false"
+               placeholder="example.com — or paste a full URL" data-i18n-placeholder="uiAddPlaceholder">
+            <button type="submit" class="btn btn-primary" data-i18n="uiAddAllowed">Allow</button>
+         </form>
+         <p class="add-error hidden" id="error-allowed" role="alert"></p>
+         <ul class="domain-list" id="list-allowed"></ul>
+         <p class="empty hidden" id="empty-allowed" data-i18n="uiAllowedEmpty">No allowed sites yet.</p>
+         <p class="footnote" data-i18n="uiAllowedNote">Removing a site stops the allowance right away on this device; the shared filter update finishes the job within about 12 hours.</p>
+      </section>
+
+      <!-- =============== Blocked =============== -->
+      <section class="panel" id="panel-blocked">
+         <div class="panel-head">
+            <h2 data-i18n="uiBlockedTitle">Blocked sites</h2>
+            <p data-i18n="uiBlockedDesc">These sites are stopped entirely — the page itself won't load, not just its ads.</p>
+         </div>
+         <form class="add-row" id="form-blocked" novalidate>
+            <input type="text" class="field" id="input-blocked" autocomplete="off" spellcheck="false"
+               placeholder="example.com — or paste a full URL" data-i18n-placeholder="uiAddPlaceholder">
+            <button type="submit" class="btn btn-danger" data-i18n="uiAddBlocked">Block</button>
+         </form>
+         <p class="add-error hidden" id="error-blocked" role="alert"></p>
+         <ul class="domain-list" id="list-blocked"></ul>
+         <p class="empty hidden" id="empty-blocked" data-i18n="uiBlockedEmpty">No blocked sites yet.</p>
+      </section>
+
+      <!-- =============== Paused =============== -->
+      <section class="panel" id="panel-paused">
+         <div class="panel-head">
+            <h2 data-i18n="uiPausedTitle">Paused sites</h2>
+            <p data-i18n="uiPausedDesc">Blocking is switched off on these sites — usually from the popup's pause switch. Pauses stay on this device only.</p>
+         </div>
+         <form class="add-row" id="form-paused" novalidate>
+            <input type="text" class="field" id="input-paused" autocomplete="off" spellcheck="false"
+               placeholder="example.com — or paste a full URL" data-i18n-placeholder="uiAddPlaceholder">
+            <button type="submit" class="btn btn-amber" data-i18n="uiAddPaused">Pause</button>
+         </form>
+         <p class="add-error hidden" id="error-paused" role="alert"></p>
+         <ul class="domain-list" id="list-paused"></ul>
+         <p class="empty hidden" id="empty-paused" data-i18n="uiPausedEmpty">Nothing is paused.</p>
+      </section>
+
+      <!-- =============== Features =============== -->
+      <section class="panel" id="panel-features">
+         <div class="panel-head">
+            <h2 data-i18n="uiFeaturesTitle">Features</h2>
+            <p data-i18n="uiFeaturesDesc">Optional extras — switch them on or off at any time.</p>
+         </div>
+         <div class="feature-card card">
+            <div class="feature-row">
+               <div class="feature-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                     <polygon points="13 19 22 12 13 5 13 19"></polygon>
+                     <polygon points="2 19 11 12 2 5 2 19"></polygon>
+                  </svg>
+               </div>
+               <span class="feature-title" data-i18n="uiYtTitle">YouTube ads</span>
+               <label class="switch">
+                  <input type="checkbox" id="ytSkipToggle" role="switch" aria-checked="false"
+                     data-i18n-aria="uiYtToggleAria" aria-label="Fast-forward YouTube video ads on or off">
+                  <span class="track"></span>
+               </label>
+            </div>
+            <p class="feature-desc" data-i18n="uiYtSettingsDesc">Some YouTube video ads are stitched into the stream itself and can't be filtered out. With this on, they're fast-forwarded to the end the moment they start. Applies on youtube.com only.</p>
+         </div>
+      </section>
+
+      <!-- =============== About =============== -->
+      <section class="panel" id="panel-about">
+         <div class="about-hero card">
+            <img src="../128.png" alt="" width="72" height="72">
+            <h2>Ad Blocker Pro</h2>
+            <span class="version-pill mono" id="versionPillAbout">v–</span>
+            <p data-i18n="uiAboutDesc">Blocks invasive ads, pop-ups and trackers, with per-site control when you need it.</p>
+         </div>
+
+         <div class="about-stat card">
+            <div class="stat-row">
+               <div class="stat-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+               </div>
+               <span class="stat-label" data-i18n="uiPopupStatLabel">Pages protected</span>
+               <span class="stat-value mono" id="aboutStatValue">0</span>
+            </div>
+            <p class="stat-explainer" data-i18n="uiStatExplainer">Counts every page visit where blocking was active — pages protected, not individual ads.</p>
+         </div>
+
+         <div class="danger-zone card">
+            <div class="danger-copy">
+               <h3 data-i18n="uiResetTitle">Restore defaults</h3>
+               <p data-i18n="uiResetDesc">Clears your allowed, blocked and paused site lists. Filter data is unaffected.</p>
+            </div>
+            <div class="danger-actions" id="resetIdle">
+               <button class="btn btn-danger" id="resetBtn" data-i18n="uiResetBtn">Restore defaults</button>
+            </div>
+            <div class="danger-actions hidden" id="resetConfirm">
+               <span class="confirm-label" data-i18n="uiResetConfirmLabel">Clear all three lists?</span>
+               <button class="btn btn-danger" id="resetYesBtn" data-i18n="uiResetYes">Yes, clear them</button>
+               <button class="btn" id="resetNoBtn" data-i18n="uiResetNo">Cancel</button>
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <script src="../engine/log.js"></script>
+   <script src="../engine/domains.js"></script>
+   <script src="../engine/bypass.js"></script>
+   <script src="../engine/storage.js"></script>
+   <script src="shared.js"></script>
+   <script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+2026-11-17 17:09:57.847: [INFO] CurrentProfilePath: C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default
+2026-11-17 17:09:57.847: [INFO] Profiles total count: 1
+2026-11-17 17:09:57.848: [INFO] Profile: name=Profile 1 path=C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default lastActive=null
+2026-11-17 17:09:57.848: [INFO] LastUsedProfileDir: C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default
+2026-11-17 17:09:57.848: [INFO] VisibilityChanged: 0
+2026-11-17 17:09:57.910: [INFO] OnDoneLoading sync enabled: 0
+2026-11-17 17:09:57.910: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-17 17:09:57.910: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-17 17:09:57.910: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-17 17:09:57.984: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-17 17:10:00.340: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-17 17:10:00.347: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-17 17:10:00.373: [INFO] Primary account changed.
+2026-11-17 17:10:00.373: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-17 17:10:00.393: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-17 17:10:00.422: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-17 17:10:05.206: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 17:10:05.208: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 17:10:05.208: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 17:10:05.208: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 17:10:05.208: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 17:10:05.210: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 17:10:05.210: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 17:10:05.211: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-17 17:10:05.824: [INFO] Sync initialization duration: 5291ms
+2026-11-17 17:16:40.045: [INFO] CurrentProfilePath: C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default
+2026-11-17 17:16:40.045: [INFO] Profiles total count: 1
+2026-11-17 17:16:40.045: [INFO] Profile: name=Personal path=C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default lastActive=2026-11-17T17:09:57.862Z
+2026-11-17 17:16:40.045: [INFO] LastUsedProfileDir: C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default
+2026-11-17 17:16:40.045: [INFO] MostRecentlyActiveProfile: name=Personal path=C:\Users\Bio\Desktop\portfolio\tests\kirakira-check\edge-profile\Default lastActive=2026-11-17T17:09:57.862Z
+2026-11-17 17:16:40.045: [INFO] VisibilityChanged: 0
+2026-11-17 17:16:40.095: [INFO] OnDoneLoading sync enabled: 1
+2026-11-17 17:16:40.095: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-17 17:16:40.095: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-17 17:16:40.095: [INFO] BookmarksSnapshot Startup total=8 bar=8 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-17 17:16:40.326: [INFO] Sync initialization duration: 231ms
