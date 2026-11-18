@@ -1,12 +1,12 @@
 (() => {
  const buttons=[...document.querySelectorAll('[data-filter]')];
  const chapters=[...document.querySelectorAll('[data-category]')];
- const counts={'flagship':1,'artworks':4,'three-d':1,'vtuber':3,'magazine':1,'audio':1};
+ const counts={'flagship':2,'artworks':4,'three-d':1,'vtuber':3,'photo':5,'magazine':1,'audio':1};
  function filter(category){
    const selected=buttons.find(b=>b.dataset.filter===category);if(!selected)return;
    buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===selected)));
    chapters.forEach(s=>s.hidden=category!=='all'&&s.dataset.category!==category);
-   document.getElementById('workCount').textContent=category==='all'?'6 หมวดงาน / 11 ผลงาน':`${selected.textContent.replace(/\d+/g,'').trim()} / ${counts[category]} ผลงาน`;
+   document.getElementById('workCount').textContent=category==='all'?'7 หมวดงาน / 17 ผลงาน':`${selected.textContent.replace(/\d+/g,'').trim()} / ${counts[category]} ผลงาน`;
  }
  buttons.forEach(b=>b.addEventListener('click',()=>filter(b.dataset.filter)));
  // A deep link must always reveal its destination, including after filtering.
