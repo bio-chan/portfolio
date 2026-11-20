@@ -2,6 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kittisak. — Game Designer &amp; Creative Technologist</title>
+  <script src="assets/i18n.js"></script>
   <meta name="description" content="Portfolio ของ กิตติศักดิ์ คนเกณฑ์ (Kittisak Khonken) - Game Designer, Systems Designer, ผู้สร้างสรรค์เกม MUEA คืนกลับ แดนสาป">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   
@@ -118,6 +119,10 @@
 
       <!-- Right Action: Clean Play Demo & Contact Pill -->
       <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Language switch (assets/i18n.js) -->
+        <button type="button" data-lang-toggle data-no-i18n class="inline-flex items-center gap-1 px-3 py-2 rounded-full glass-pill border border-white/15 text-white text-xs font-mono tracking-wide hover:border-purple-400/60 transition-all">
+          <span data-lang="th">TH</span><span class="opacity-40">/</span><span data-lang="en">EN</span>
+        </button>
         <a href="https://shirodev404.itch.io/muea-demo" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white text-xs font-medium tracking-wide transition-all" rel="noopener noreferrer">
           <span>Play Demo</span>
           <span class="text-[10px]">↗</span>
@@ -460,31 +465,6 @@
             <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-300">
               <span>TCDC โคราช</span>
               <span class="text-white">VIEW ↗</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Showcase 5: Verified Archive -->
-        <div class="rounded-lg bg-studio-panel border border-white/10 hover:border-white/30 transition-all duration-500 group overflow-hidden flex flex-col cursor-pointer" onclick="openPhotoModal('assets/images/original_document.jpg', 'เอกสารประวัติและผลงานต้นฉบับ')">
-          <div class="h-56 overflow-hidden relative bg-black">
-            <img src="assets/images/original_document.jpg" alt="Verified Record" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700 ease-out">
-            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-black/80 backdrop-blur-md border border-white/20 text-[10px] font-mono text-white">
-              OFFICIAL ARCHIVE
-            </span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="text-xs font-mono text-purple-300 font-medium">VERIFIED RECORDS</div>
-              <h3 class="text-base font-bold text-white group-hover:text-slate-200 transition-colors mt-1">
-                เอกสารทางการและภาพกิจกรรม
-              </h3>
-              <p class="text-xs text-slate-400 mt-1 leading-relaxed font-light">
-                คลิกดูภาพขนาดเต็มของเอกสารประวัติส่วนตัว สถาบันการศึกษา และหลักฐานการแข่งขัน
-              </p>
-            </div>
-            <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-300">
-              <span>หลักฐานทางการ</span>
-              <span class="text-white">FULL ARCHIVE ↗</span>
             </div>
           </div>
         </div>
