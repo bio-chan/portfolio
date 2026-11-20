@@ -347,3 +347,6 @@ header nav a:hover{color:#00f0ff!important;text-shadow:0 0 10px #00f0ff}
 .photo-notes p{font-size:12.5px;line-height:1.8;color:#b9b2c6;font-weight:300}
 @media(max-width:900px){.photo-grid{grid-template-columns:repeat(2,1fr)}.photo-item.wide{aspect-ratio:3/2;order:9}.photo-notes{grid-template-columns:1fr}}
 @media(max-width:520px){.photo-grid{gap:8px}.photo-cap{font-size:11px}}
+/* MUEA screenshot strip: 4 per row, red hover to match the horror theme */
+.muea-shots{grid-template-columns:repeat(4,1fr)}.muea-shots .kira-shot:hover{border-color:#e0313b;box-shadow:0 0 0 1px #e0313b,0 0 24px #e0313b77}
+@media(max-width:520px){.muea-shots{grid-template-columns:repeat(2,1fr)}}

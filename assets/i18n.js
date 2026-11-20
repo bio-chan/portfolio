@@ -62,6 +62,15 @@
     'สังเกตพฤติกรรมและหลักฐานเพื่อค้นหาผู้แฝงตัว': 'Read behaviour and evidence to find the impostors',
     'ตีความความเชื่ออีสานให้เป็นประสบการณ์ Folk Horror': 'Reinterpret Isan folk beliefs as a folk horror experience',
     'ชมตัวอย่างเกม MUEA': 'Watch the MUEA trailer',
+    'ภาพจากเกม MUEA': 'Screenshots from MUEA',
+    'ประตูหมู่บ้านยามค่ำคืน — ซักถามผู้มาเยือน': 'The village gate at night — questioning a visitor',
+    'บทสนทนากับชาวบ้านที่มาขอเข้าหมู่บ้าน': 'Talking with a villager asking to come in',
+    'ประทับตรา “ผ่าน” ให้เข้าหมู่บ้าน': 'Stamping “Pass” to let them in',
+    'ปฏิเสธผู้ที่ดูน่าสงสัย': 'Turning away someone suspicious',
+    'ตรวจดวงตาเพื่อหาสิ่งผิดปกติ': 'Examining the eyes for anything unnatural',
+    'เมื่อผีเผยร่างจริง': 'When the ghost shows its true form',
+    'รายชื่อลูกบ้านยามเช้า': 'The morning roster of villagers',
+    'ร้านค้า — ซื้อเสบียงและเครื่องป้องกัน': 'The shop — buying supplies and protection',
 
     /* ---------- game design: Kira Kira Workout ---------- */
     'ออกกำลังจริง เต้นจริง เพื่อเดบิวต์เป็นไอดอล': 'Real workouts, real dancing — all for an idol debut',
